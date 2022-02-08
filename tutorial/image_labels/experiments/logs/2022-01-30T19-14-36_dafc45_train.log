@@ -1,0 +1,1809 @@
+2022-01-30 19:14:36,940:INFO: Creating the datasets from TFRecords...
+2022-01-30 19:14:38,381:WARNING: From C:\Users\jpklock\Desktop\seminario_weak\weakly_supervised\image_labels\src\tfrecords.py:88: DatasetV1.make_initializable_iterator (from tensorflow.python.data.ops.dataset_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+This is a deprecated API that should only be used in TF 1 graph mode and legacy TF 2 graph mode available through `tf.compat.v1`. In all other situations -- namely, eager mode and inside `tf.function` -- you can consume dataset elements using `for elem in dataset: ...` or by explicitly creating iterator via `iterator = iter(dataset)` and fetching its elements via `values = next(iterator)`. Furthermore, this API is not available in TF 2. During the transition from TF 1 to TF 2 you can use `tf.compat.v1.data.make_initializable_iterator(dataset)` to create a TF 1 graph mode style iterator for a dataset created through TF 2 APIs. Note that this should be a transient state of your code base as there are in general no guarantees about the interoperability of TF 1 and TF 2 code.
+2022-01-30 19:14:38,424:INFO: Creating the model...
+2022-01-30 19:14:38,486:WARNING: From C:\Users\jpklock\anaconda3\lib\site-packages\keras\layers\normalization\batch_normalization.py:532: _colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+2022-01-30 19:14:40,177:INFO: Starting training for 200 epochs
+2022-01-30 19:14:41,935:INFO: Epoch 1/200
+2022-01-30 19:14:45,809:INFO: - Train metrics: loss: 10.185 ; accuracy: 0.100
+2022-01-30 19:14:45,875:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:14:46,089:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:14:46,313:INFO: - Train segmentation accuracy: 0.5912
+2022-01-30 19:14:46,878:INFO: - Eval metrics: loss: 9.192 ; accuracy: 0.800
+2022-01-30 19:14:47,040:INFO: - Eval segmentation accuracy: 0.6470
+2022-01-30 19:14:47,373:INFO: - Eval metrics: loss: 9.191 ; accuracy: 0.800
+2022-01-30 19:14:47,531:INFO: - Test segmentation accuracy: 0.6959
+2022-01-30 19:14:47,916:INFO: Epoch 2/200
+2022-01-30 19:14:48,008:INFO: - Train metrics: loss: 9.666 ; accuracy: 0.100
+2022-01-30 19:14:48,075:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:14:48,153:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:14:48,248:INFO: - Train segmentation accuracy: 0.7212
+2022-01-30 19:14:48,271:INFO: - Eval metrics: loss: 8.866 ; accuracy: 0.800
+2022-01-30 19:14:48,306:INFO: - Eval segmentation accuracy: 0.6809
+2022-01-30 19:14:48,330:INFO: - Eval metrics: loss: 8.863 ; accuracy: 0.800
+2022-01-30 19:14:48,365:INFO: - Test segmentation accuracy: 0.7397
+2022-01-30 19:14:48,366:INFO: Epoch 3/200
+2022-01-30 19:14:48,462:INFO: - Train metrics: loss: 9.166 ; accuracy: 0.400
+2022-01-30 19:14:48,527:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:14:48,606:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:14:48,704:INFO: - Train segmentation accuracy: 0.7646
+2022-01-30 19:14:48,727:INFO: - Eval metrics: loss: 8.545 ; accuracy: 0.800
+2022-01-30 19:14:48,769:INFO: - Eval segmentation accuracy: 0.6606
+2022-01-30 19:14:48,803:INFO: - Eval metrics: loss: 8.540 ; accuracy: 0.800
+2022-01-30 19:14:48,851:INFO: - Test segmentation accuracy: 0.7157
+2022-01-30 19:14:48,852:INFO: Epoch 4/200
+2022-01-30 19:14:48,980:INFO: - Train metrics: loss: 8.732 ; accuracy: 0.400
+2022-01-30 19:14:49,053:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:14:49,132:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:14:49,233:INFO: - Train segmentation accuracy: 0.8003
+2022-01-30 19:14:49,257:INFO: - Eval metrics: loss: 8.217 ; accuracy: 0.800
+2022-01-30 19:14:49,295:INFO: - Eval segmentation accuracy: 0.6153
+2022-01-30 19:14:49,321:INFO: - Eval metrics: loss: 8.209 ; accuracy: 0.800
+2022-01-30 19:14:49,356:INFO: - Test segmentation accuracy: 0.6806
+2022-01-30 19:14:49,357:INFO: Epoch 5/200
+2022-01-30 19:14:49,453:INFO: - Train metrics: loss: 8.261 ; accuracy: 0.500
+2022-01-30 19:14:49,519:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:14:49,602:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:14:49,701:INFO: - Train segmentation accuracy: 0.8022
+2022-01-30 19:14:49,725:INFO: - Eval metrics: loss: 7.880 ; accuracy: 0.800
+2022-01-30 19:14:49,760:INFO: - Eval segmentation accuracy: 0.5943
+2022-01-30 19:14:49,784:INFO: - Eval metrics: loss: 7.872 ; accuracy: 0.800
+2022-01-30 19:14:49,818:INFO: - Test segmentation accuracy: 0.6654
+2022-01-30 19:14:49,818:INFO: Epoch 6/200
+2022-01-30 19:14:49,916:INFO: - Train metrics: loss: 7.875 ; accuracy: 0.600
+2022-01-30 19:14:49,981:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:14:50,066:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:14:50,163:INFO: - Train segmentation accuracy: 0.8089
+2022-01-30 19:14:50,186:INFO: - Eval metrics: loss: 7.546 ; accuracy: 0.800
+2022-01-30 19:14:50,221:INFO: - Eval segmentation accuracy: 0.5900
+2022-01-30 19:14:50,248:INFO: - Eval metrics: loss: 7.538 ; accuracy: 0.800
+2022-01-30 19:14:50,283:INFO: - Test segmentation accuracy: 0.6601
+2022-01-30 19:14:50,284:INFO: Epoch 7/200
+2022-01-30 19:14:50,415:INFO: - Train metrics: loss: 7.489 ; accuracy: 0.800
+2022-01-30 19:14:50,481:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:14:50,578:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:14:50,687:INFO: - Train segmentation accuracy: 0.8068
+2022-01-30 19:14:50,717:INFO: - Eval metrics: loss: 7.223 ; accuracy: 0.800
+2022-01-30 19:14:50,756:INFO: - Eval segmentation accuracy: 0.5875
+2022-01-30 19:14:50,788:INFO: - Eval metrics: loss: 7.214 ; accuracy: 0.800
+2022-01-30 19:14:50,825:INFO: - Test segmentation accuracy: 0.6586
+2022-01-30 19:14:50,825:INFO: Epoch 8/200
+2022-01-30 19:14:50,962:INFO: - Train metrics: loss: 7.055 ; accuracy: 0.900
+2022-01-30 19:14:51,030:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:14:51,124:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:14:51,232:INFO: - Train segmentation accuracy: 0.8049
+2022-01-30 19:14:51,264:INFO: - Eval metrics: loss: 6.907 ; accuracy: 0.800
+2022-01-30 19:14:51,305:INFO: - Eval segmentation accuracy: 0.5886
+2022-01-30 19:14:51,336:INFO: - Eval metrics: loss: 6.899 ; accuracy: 0.800
+2022-01-30 19:14:51,375:INFO: - Test segmentation accuracy: 0.6601
+2022-01-30 19:14:51,376:INFO: Epoch 9/200
+2022-01-30 19:14:51,506:INFO: - Train metrics: loss: 6.646 ; accuracy: 1.000
+2022-01-30 19:14:51,571:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:14:51,668:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:14:51,776:INFO: - Train segmentation accuracy: 0.7741
+2022-01-30 19:14:51,807:INFO: - Eval metrics: loss: 6.604 ; accuracy: 0.800
+2022-01-30 19:14:51,844:INFO: - Eval segmentation accuracy: 0.5913
+2022-01-30 19:14:51,875:INFO: - Eval metrics: loss: 6.595 ; accuracy: 0.800
+2022-01-30 19:14:51,913:INFO: - Test segmentation accuracy: 0.6611
+2022-01-30 19:14:51,913:INFO: Epoch 10/200
+2022-01-30 19:14:52,041:INFO: - Train metrics: loss: 6.341 ; accuracy: 1.000
+2022-01-30 19:14:52,105:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:14:52,201:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:14:52,307:INFO: - Train segmentation accuracy: 0.7658
+2022-01-30 19:14:52,336:INFO: - Eval metrics: loss: 6.321 ; accuracy: 0.800
+2022-01-30 19:14:52,373:INFO: - Eval segmentation accuracy: 0.5922
+2022-01-30 19:14:52,404:INFO: - Eval metrics: loss: 6.310 ; accuracy: 0.800
+2022-01-30 19:14:52,440:INFO: - Test segmentation accuracy: 0.6636
+2022-01-30 19:14:52,441:INFO: Epoch 11/200
+2022-01-30 19:14:52,571:INFO: - Train metrics: loss: 5.996 ; accuracy: 1.000
+2022-01-30 19:14:52,635:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:14:52,733:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:14:52,839:INFO: - Train segmentation accuracy: 0.7614
+2022-01-30 19:14:52,869:INFO: - Eval metrics: loss: 6.044 ; accuracy: 0.800
+2022-01-30 19:14:52,908:INFO: - Eval segmentation accuracy: 0.5919
+2022-01-30 19:14:52,939:INFO: - Eval metrics: loss: 6.031 ; accuracy: 0.800
+2022-01-30 19:14:52,976:INFO: - Test segmentation accuracy: 0.6636
+2022-01-30 19:14:52,976:INFO: Epoch 12/200
+2022-01-30 19:14:53,104:INFO: - Train metrics: loss: 5.696 ; accuracy: 1.000
+2022-01-30 19:14:53,173:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:14:53,269:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:14:53,374:INFO: - Train segmentation accuracy: 0.7637
+2022-01-30 19:14:53,403:INFO: - Eval metrics: loss: 5.775 ; accuracy: 0.800
+2022-01-30 19:14:53,443:INFO: - Eval segmentation accuracy: 0.5920
+2022-01-30 19:14:53,471:INFO: - Eval metrics: loss: 5.760 ; accuracy: 0.800
+2022-01-30 19:14:53,509:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:14:53,510:INFO: Epoch 13/200
+2022-01-30 19:14:53,638:INFO: - Train metrics: loss: 5.420 ; accuracy: 1.000
+2022-01-30 19:14:53,704:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:14:53,797:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:14:53,906:INFO: - Train segmentation accuracy: 0.7567
+2022-01-30 19:14:53,934:INFO: - Eval metrics: loss: 5.511 ; accuracy: 0.800
+2022-01-30 19:14:53,973:INFO: - Eval segmentation accuracy: 0.5919
+2022-01-30 19:14:54,000:INFO: - Eval metrics: loss: 5.495 ; accuracy: 0.800
+2022-01-30 19:14:54,038:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:14:54,039:INFO: Epoch 14/200
+2022-01-30 19:14:54,169:INFO: - Train metrics: loss: 5.184 ; accuracy: 1.000
+2022-01-30 19:14:54,236:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:14:54,328:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:14:54,435:INFO: - Train segmentation accuracy: 0.7485
+2022-01-30 19:14:54,462:INFO: - Eval metrics: loss: 5.262 ; accuracy: 0.800
+2022-01-30 19:14:54,501:INFO: - Eval segmentation accuracy: 0.5919
+2022-01-30 19:14:54,529:INFO: - Eval metrics: loss: 5.245 ; accuracy: 0.800
+2022-01-30 19:14:54,568:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:14:54,569:INFO: Epoch 15/200
+2022-01-30 19:14:54,697:INFO: - Train metrics: loss: 4.943 ; accuracy: 1.000
+2022-01-30 19:14:54,761:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:14:54,857:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:14:54,960:INFO: - Train segmentation accuracy: 0.7583
+2022-01-30 19:14:54,992:INFO: - Eval metrics: loss: 5.028 ; accuracy: 0.800
+2022-01-30 19:14:55,030:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:14:55,061:INFO: - Eval metrics: loss: 5.010 ; accuracy: 0.800
+2022-01-30 19:14:55,098:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:14:55,099:INFO: Epoch 16/200
+2022-01-30 19:14:55,230:INFO: - Train metrics: loss: 4.730 ; accuracy: 1.000
+2022-01-30 19:14:55,297:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:14:55,389:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:14:55,496:INFO: - Train segmentation accuracy: 0.7495
+2022-01-30 19:14:55,528:INFO: - Eval metrics: loss: 4.809 ; accuracy: 0.800
+2022-01-30 19:14:55,566:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:14:55,597:INFO: - Eval metrics: loss: 4.791 ; accuracy: 0.800
+2022-01-30 19:14:55,637:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:14:55,638:INFO: Epoch 17/200
+2022-01-30 19:14:55,778:INFO: - Train metrics: loss: 4.531 ; accuracy: 1.000
+2022-01-30 19:14:55,844:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:14:55,937:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:14:56,048:INFO: - Train segmentation accuracy: 0.7472
+2022-01-30 19:14:56,082:INFO: - Eval metrics: loss: 4.604 ; accuracy: 0.800
+2022-01-30 19:14:56,125:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:14:56,153:INFO: - Eval metrics: loss: 4.585 ; accuracy: 0.800
+2022-01-30 19:14:56,191:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:14:56,192:INFO: Epoch 18/200
+2022-01-30 19:14:56,319:INFO: - Train metrics: loss: 4.340 ; accuracy: 1.000
+2022-01-30 19:14:56,386:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:14:56,479:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:14:56,584:INFO: - Train segmentation accuracy: 0.7496
+2022-01-30 19:14:56,614:INFO: - Eval metrics: loss: 4.412 ; accuracy: 0.800
+2022-01-30 19:14:56,653:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:14:56,684:INFO: - Eval metrics: loss: 4.392 ; accuracy: 0.800
+2022-01-30 19:14:56,724:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:14:56,725:INFO: Epoch 19/200
+2022-01-30 19:14:56,852:INFO: - Train metrics: loss: 4.161 ; accuracy: 1.000
+2022-01-30 19:14:56,916:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:14:57,011:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:14:57,114:INFO: - Train segmentation accuracy: 0.7580
+2022-01-30 19:14:57,150:INFO: - Eval metrics: loss: 4.232 ; accuracy: 0.800
+2022-01-30 19:14:57,191:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:14:57,219:INFO: - Eval metrics: loss: 4.213 ; accuracy: 0.800
+2022-01-30 19:14:57,259:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:14:57,259:INFO: Epoch 20/200
+2022-01-30 19:14:57,393:INFO: - Train metrics: loss: 3.980 ; accuracy: 1.000
+2022-01-30 19:14:57,456:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:14:57,548:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:14:57,651:INFO: - Train segmentation accuracy: 0.7468
+2022-01-30 19:14:57,679:INFO: - Eval metrics: loss: 4.064 ; accuracy: 0.800
+2022-01-30 19:14:57,718:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:14:57,748:INFO: - Eval metrics: loss: 4.045 ; accuracy: 0.800
+2022-01-30 19:14:57,788:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:14:57,788:INFO: Epoch 21/200
+2022-01-30 19:14:57,915:INFO: - Train metrics: loss: 3.823 ; accuracy: 1.000
+2022-01-30 19:14:57,982:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:14:58,074:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:14:58,179:INFO: - Train segmentation accuracy: 0.7432
+2022-01-30 19:14:58,213:INFO: - Eval metrics: loss: 3.908 ; accuracy: 0.800
+2022-01-30 19:14:58,249:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:14:58,278:INFO: - Eval metrics: loss: 3.889 ; accuracy: 0.800
+2022-01-30 19:14:58,317:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:14:58,318:INFO: Epoch 22/200
+2022-01-30 19:14:58,443:INFO: - Train metrics: loss: 3.662 ; accuracy: 1.000
+2022-01-30 19:14:58,508:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:14:58,601:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:14:58,708:INFO: - Train segmentation accuracy: 0.7539
+2022-01-30 19:14:58,742:INFO: - Eval metrics: loss: 3.762 ; accuracy: 0.800
+2022-01-30 19:14:58,781:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:14:58,812:INFO: - Eval metrics: loss: 3.743 ; accuracy: 0.800
+2022-01-30 19:14:58,848:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:14:58,849:INFO: Epoch 23/200
+2022-01-30 19:14:58,978:INFO: - Train metrics: loss: 3.518 ; accuracy: 1.000
+2022-01-30 19:14:59,040:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:14:59,132:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:14:59,240:INFO: - Train segmentation accuracy: 0.7410
+2022-01-30 19:14:59,272:INFO: - Eval metrics: loss: 3.626 ; accuracy: 0.800
+2022-01-30 19:14:59,309:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:14:59,339:INFO: - Eval metrics: loss: 3.607 ; accuracy: 0.800
+2022-01-30 19:14:59,376:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:14:59,376:INFO: Epoch 24/200
+2022-01-30 19:14:59,503:INFO: - Train metrics: loss: 3.386 ; accuracy: 1.000
+2022-01-30 19:14:59,570:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:14:59,665:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:14:59,767:INFO: - Train segmentation accuracy: 0.7533
+2022-01-30 19:14:59,793:INFO: - Eval metrics: loss: 3.499 ; accuracy: 0.800
+2022-01-30 19:14:59,832:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:14:59,863:INFO: - Eval metrics: loss: 3.481 ; accuracy: 0.800
+2022-01-30 19:14:59,899:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:14:59,899:INFO: Epoch 25/200
+2022-01-30 19:15:00,028:INFO: - Train metrics: loss: 3.255 ; accuracy: 1.000
+2022-01-30 19:15:00,094:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:00,188:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:00,295:INFO: - Train segmentation accuracy: 0.7609
+2022-01-30 19:15:00,326:INFO: - Eval metrics: loss: 3.380 ; accuracy: 0.800
+2022-01-30 19:15:00,365:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:15:00,397:INFO: - Eval metrics: loss: 3.363 ; accuracy: 0.800
+2022-01-30 19:15:00,435:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:00,436:INFO: Epoch 26/200
+2022-01-30 19:15:00,566:INFO: - Train metrics: loss: 3.129 ; accuracy: 1.000
+2022-01-30 19:15:00,632:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:00,727:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:00,831:INFO: - Train segmentation accuracy: 0.7667
+2022-01-30 19:15:00,857:INFO: - Eval metrics: loss: 3.268 ; accuracy: 0.800
+2022-01-30 19:15:00,895:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:15:00,925:INFO: - Eval metrics: loss: 3.252 ; accuracy: 0.800
+2022-01-30 19:15:00,964:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:00,965:INFO: Epoch 27/200
+2022-01-30 19:15:01,105:INFO: - Train metrics: loss: 3.013 ; accuracy: 1.000
+2022-01-30 19:15:01,192:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:01,303:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:01,408:INFO: - Train segmentation accuracy: 0.7513
+2022-01-30 19:15:01,439:INFO: - Eval metrics: loss: 3.163 ; accuracy: 0.800
+2022-01-30 19:15:01,479:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:15:01,508:INFO: - Eval metrics: loss: 3.147 ; accuracy: 0.800
+2022-01-30 19:15:01,546:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:01,547:INFO: Epoch 28/200
+2022-01-30 19:15:01,675:INFO: - Train metrics: loss: 2.902 ; accuracy: 1.000
+2022-01-30 19:15:01,744:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:01,836:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:01,946:INFO: - Train segmentation accuracy: 0.7516
+2022-01-30 19:15:01,973:INFO: - Eval metrics: loss: 3.064 ; accuracy: 0.800
+2022-01-30 19:15:02,010:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:15:02,043:INFO: - Eval metrics: loss: 3.048 ; accuracy: 0.800
+2022-01-30 19:15:02,084:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:02,084:INFO: Epoch 29/200
+2022-01-30 19:15:02,220:INFO: - Train metrics: loss: 2.796 ; accuracy: 1.000
+2022-01-30 19:15:02,287:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:02,382:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:02,493:INFO: - Train segmentation accuracy: 0.7523
+2022-01-30 19:15:02,524:INFO: - Eval metrics: loss: 2.970 ; accuracy: 0.800
+2022-01-30 19:15:02,565:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:15:02,593:INFO: - Eval metrics: loss: 2.955 ; accuracy: 0.800
+2022-01-30 19:15:02,633:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:02,634:INFO: Epoch 30/200
+2022-01-30 19:15:02,768:INFO: - Train metrics: loss: 2.697 ; accuracy: 1.000
+2022-01-30 19:15:02,834:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:02,926:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:03,039:INFO: - Train segmentation accuracy: 0.7574
+2022-01-30 19:15:03,067:INFO: - Eval metrics: loss: 2.882 ; accuracy: 0.800
+2022-01-30 19:15:03,108:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:15:03,136:INFO: - Eval metrics: loss: 2.868 ; accuracy: 0.800
+2022-01-30 19:15:03,176:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:03,177:INFO: Epoch 31/200
+2022-01-30 19:15:03,307:INFO: - Train metrics: loss: 2.603 ; accuracy: 1.000
+2022-01-30 19:15:03,372:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:03,472:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:03,574:INFO: - Train segmentation accuracy: 0.7423
+2022-01-30 19:15:03,601:INFO: - Eval metrics: loss: 2.799 ; accuracy: 0.800
+2022-01-30 19:15:03,639:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:15:03,666:INFO: - Eval metrics: loss: 2.785 ; accuracy: 0.800
+2022-01-30 19:15:03,704:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:03,705:INFO: Epoch 32/200
+2022-01-30 19:15:03,834:INFO: - Train metrics: loss: 2.512 ; accuracy: 1.000
+2022-01-30 19:15:03,899:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:03,994:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:04,112:INFO: - Train segmentation accuracy: 0.7513
+2022-01-30 19:15:04,140:INFO: - Eval metrics: loss: 2.719 ; accuracy: 0.800
+2022-01-30 19:15:04,178:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:15:04,209:INFO: - Eval metrics: loss: 2.706 ; accuracy: 0.800
+2022-01-30 19:15:04,244:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:04,245:INFO: Epoch 33/200
+2022-01-30 19:15:04,371:INFO: - Train metrics: loss: 2.429 ; accuracy: 1.000
+2022-01-30 19:15:04,433:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:04,529:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:04,637:INFO: - Train segmentation accuracy: 0.7564
+2022-01-30 19:15:04,669:INFO: - Eval metrics: loss: 2.643 ; accuracy: 0.800
+2022-01-30 19:15:04,709:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:15:04,738:INFO: - Eval metrics: loss: 2.631 ; accuracy: 0.800
+2022-01-30 19:15:04,775:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:04,775:INFO: Epoch 34/200
+2022-01-30 19:15:04,902:INFO: - Train metrics: loss: 2.347 ; accuracy: 1.000
+2022-01-30 19:15:04,967:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:05,063:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:05,171:INFO: - Train segmentation accuracy: 0.7583
+2022-01-30 19:15:05,202:INFO: - Eval metrics: loss: 2.570 ; accuracy: 0.800
+2022-01-30 19:15:05,240:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:15:05,269:INFO: - Eval metrics: loss: 2.560 ; accuracy: 0.800
+2022-01-30 19:15:05,307:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:05,308:INFO: Epoch 35/200
+2022-01-30 19:15:05,436:INFO: - Train metrics: loss: 2.271 ; accuracy: 1.000
+2022-01-30 19:15:05,507:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:05,602:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:05,711:INFO: - Train segmentation accuracy: 0.7593
+2022-01-30 19:15:05,741:INFO: - Eval metrics: loss: 2.501 ; accuracy: 0.800
+2022-01-30 19:15:05,781:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:15:05,812:INFO: - Eval metrics: loss: 2.492 ; accuracy: 0.800
+2022-01-30 19:15:05,848:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:05,849:INFO: Epoch 36/200
+2022-01-30 19:15:05,984:INFO: - Train metrics: loss: 2.198 ; accuracy: 1.000
+2022-01-30 19:15:06,055:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:06,153:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:06,263:INFO: - Train segmentation accuracy: 0.7414
+2022-01-30 19:15:06,290:INFO: - Eval metrics: loss: 2.435 ; accuracy: 0.800
+2022-01-30 19:15:06,327:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:15:06,356:INFO: - Eval metrics: loss: 2.428 ; accuracy: 0.800
+2022-01-30 19:15:06,393:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:06,394:INFO: Epoch 37/200
+2022-01-30 19:15:06,522:INFO: - Train metrics: loss: 2.129 ; accuracy: 1.000
+2022-01-30 19:15:06,589:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:06,684:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:06,792:INFO: - Train segmentation accuracy: 0.7424
+2022-01-30 19:15:06,825:INFO: - Eval metrics: loss: 2.373 ; accuracy: 0.800
+2022-01-30 19:15:06,863:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:15:06,889:INFO: - Eval metrics: loss: 2.367 ; accuracy: 0.800
+2022-01-30 19:15:06,927:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:06,927:INFO: Epoch 38/200
+2022-01-30 19:15:07,067:INFO: - Train metrics: loss: 2.065 ; accuracy: 1.000
+2022-01-30 19:15:07,134:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:07,229:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:07,343:INFO: - Train segmentation accuracy: 0.7521
+2022-01-30 19:15:07,377:INFO: - Eval metrics: loss: 2.315 ; accuracy: 0.800
+2022-01-30 19:15:07,413:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:15:07,444:INFO: - Eval metrics: loss: 2.310 ; accuracy: 0.800
+2022-01-30 19:15:07,484:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:07,484:INFO: Epoch 39/200
+2022-01-30 19:15:07,621:INFO: - Train metrics: loss: 2.003 ; accuracy: 1.000
+2022-01-30 19:15:07,686:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:07,780:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:07,884:INFO: - Train segmentation accuracy: 0.7480
+2022-01-30 19:15:07,914:INFO: - Eval metrics: loss: 2.258 ; accuracy: 0.800
+2022-01-30 19:15:07,952:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:15:07,981:INFO: - Eval metrics: loss: 2.255 ; accuracy: 0.800
+2022-01-30 19:15:08,018:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:08,019:INFO: Epoch 40/200
+2022-01-30 19:15:08,145:INFO: - Train metrics: loss: 1.942 ; accuracy: 1.000
+2022-01-30 19:15:08,208:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:08,309:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:08,413:INFO: - Train segmentation accuracy: 0.7572
+2022-01-30 19:15:08,443:INFO: - Eval metrics: loss: 2.205 ; accuracy: 0.800
+2022-01-30 19:15:08,486:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:15:08,515:INFO: - Eval metrics: loss: 2.203 ; accuracy: 0.800
+2022-01-30 19:15:08,550:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:08,550:INFO: Epoch 41/200
+2022-01-30 19:15:08,677:INFO: - Train metrics: loss: 1.888 ; accuracy: 1.000
+2022-01-30 19:15:08,748:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:08,841:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:08,947:INFO: - Train segmentation accuracy: 0.7530
+2022-01-30 19:15:08,979:INFO: - Eval metrics: loss: 2.153 ; accuracy: 0.800
+2022-01-30 19:15:09,016:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:15:09,045:INFO: - Eval metrics: loss: 2.152 ; accuracy: 0.800
+2022-01-30 19:15:09,083:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:09,084:INFO: Epoch 42/200
+2022-01-30 19:15:09,213:INFO: - Train metrics: loss: 1.833 ; accuracy: 1.000
+2022-01-30 19:15:09,281:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:09,373:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:09,488:INFO: - Train segmentation accuracy: 0.7567
+2022-01-30 19:15:09,519:INFO: - Eval metrics: loss: 2.104 ; accuracy: 0.800
+2022-01-30 19:15:09,556:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:15:09,585:INFO: - Eval metrics: loss: 2.104 ; accuracy: 0.800
+2022-01-30 19:15:09,622:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:09,623:INFO: Epoch 43/200
+2022-01-30 19:15:09,763:INFO: - Train metrics: loss: 1.782 ; accuracy: 1.000
+2022-01-30 19:15:09,828:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:09,919:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:10,029:INFO: - Train segmentation accuracy: 0.7428
+2022-01-30 19:15:10,058:INFO: - Eval metrics: loss: 2.057 ; accuracy: 0.800
+2022-01-30 19:15:10,100:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:15:10,130:INFO: - Eval metrics: loss: 2.057 ; accuracy: 0.800
+2022-01-30 19:15:10,166:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:10,167:INFO: Epoch 44/200
+2022-01-30 19:15:10,299:INFO: - Train metrics: loss: 1.734 ; accuracy: 1.000
+2022-01-30 19:15:10,362:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:10,454:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:10,558:INFO: - Train segmentation accuracy: 0.7384
+2022-01-30 19:15:10,587:INFO: - Eval metrics: loss: 2.012 ; accuracy: 0.800
+2022-01-30 19:15:10,628:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:15:10,661:INFO: - Eval metrics: loss: 2.012 ; accuracy: 0.800
+2022-01-30 19:15:10,704:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:10,705:INFO: Epoch 45/200
+2022-01-30 19:15:10,837:INFO: - Train metrics: loss: 1.687 ; accuracy: 1.000
+2022-01-30 19:15:10,905:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:10,996:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:11,101:INFO: - Train segmentation accuracy: 0.7456
+2022-01-30 19:15:11,130:INFO: - Eval metrics: loss: 1.970 ; accuracy: 0.800
+2022-01-30 19:15:11,173:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:15:11,207:INFO: - Eval metrics: loss: 1.969 ; accuracy: 0.800
+2022-01-30 19:15:11,248:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:11,248:INFO: Epoch 46/200
+2022-01-30 19:15:11,377:INFO: - Train metrics: loss: 1.643 ; accuracy: 1.000
+2022-01-30 19:15:11,444:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:11,538:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:11,645:INFO: - Train segmentation accuracy: 0.7434
+2022-01-30 19:15:11,680:INFO: - Eval metrics: loss: 1.929 ; accuracy: 0.800
+2022-01-30 19:15:11,719:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:15:11,752:INFO: - Eval metrics: loss: 1.927 ; accuracy: 0.800
+2022-01-30 19:15:11,791:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:11,791:INFO: Epoch 47/200
+2022-01-30 19:15:11,924:INFO: - Train metrics: loss: 1.601 ; accuracy: 1.000
+2022-01-30 19:15:11,987:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:12,084:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:12,189:INFO: - Train segmentation accuracy: 0.7446
+2022-01-30 19:15:12,218:INFO: - Eval metrics: loss: 1.890 ; accuracy: 0.800
+2022-01-30 19:15:12,256:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:15:12,288:INFO: - Eval metrics: loss: 1.888 ; accuracy: 0.800
+2022-01-30 19:15:12,326:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:12,326:INFO: Epoch 48/200
+2022-01-30 19:15:12,455:INFO: - Train metrics: loss: 1.560 ; accuracy: 1.000
+2022-01-30 19:15:12,520:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:12,613:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:12,723:INFO: - Train segmentation accuracy: 0.7470
+2022-01-30 19:15:12,756:INFO: - Eval metrics: loss: 1.854 ; accuracy: 0.800
+2022-01-30 19:15:12,795:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:15:12,826:INFO: - Eval metrics: loss: 1.850 ; accuracy: 0.800
+2022-01-30 19:15:12,863:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:12,864:INFO: Epoch 49/200
+2022-01-30 19:15:12,995:INFO: - Train metrics: loss: 1.525 ; accuracy: 1.000
+2022-01-30 19:15:13,061:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:13,159:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:13,266:INFO: - Train segmentation accuracy: 0.7654
+2022-01-30 19:15:13,299:INFO: - Eval metrics: loss: 1.821 ; accuracy: 0.800
+2022-01-30 19:15:13,337:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:15:13,364:INFO: - Eval metrics: loss: 1.816 ; accuracy: 0.800
+2022-01-30 19:15:13,400:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:13,401:INFO: Epoch 50/200
+2022-01-30 19:15:13,611:INFO: - Train metrics: loss: 1.492 ; accuracy: 1.000
+2022-01-30 19:15:13,678:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:13,763:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:13,854:INFO: - Train segmentation accuracy: 0.7432
+2022-01-30 19:15:13,877:INFO: - Eval metrics: loss: 1.788 ; accuracy: 0.800
+2022-01-30 19:15:13,910:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:15:13,933:INFO: - Eval metrics: loss: 1.784 ; accuracy: 0.800
+2022-01-30 19:15:13,966:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:13,966:INFO: Epoch 51/200
+2022-01-30 19:15:14,056:INFO: - Train metrics: loss: 1.505 ; accuracy: 1.000
+2022-01-30 19:15:14,122:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:14,202:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:14,291:INFO: - Train segmentation accuracy: 0.7556
+2022-01-30 19:15:14,316:INFO: - Eval metrics: loss: 1.763 ; accuracy: 0.800
+2022-01-30 19:15:14,353:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:15:14,376:INFO: - Eval metrics: loss: 1.757 ; accuracy: 0.800
+2022-01-30 19:15:14,409:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:14,410:INFO: Epoch 52/200
+2022-01-30 19:15:14,505:INFO: - Train metrics: loss: 1.448 ; accuracy: 1.000
+2022-01-30 19:15:14,571:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:14,653:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:14,744:INFO: - Train segmentation accuracy: 0.7362
+2022-01-30 19:15:14,770:INFO: - Eval metrics: loss: 1.743 ; accuracy: 0.800
+2022-01-30 19:15:14,803:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:15:14,830:INFO: - Eval metrics: loss: 1.733 ; accuracy: 0.800
+2022-01-30 19:15:14,862:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:14,863:INFO: Epoch 53/200
+2022-01-30 19:15:14,954:INFO: - Train metrics: loss: 1.418 ; accuracy: 1.000
+2022-01-30 19:15:15,021:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:15,102:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:15,196:INFO: - Train segmentation accuracy: 0.7073
+2022-01-30 19:15:15,222:INFO: - Eval metrics: loss: 1.838 ; accuracy: 0.800
+2022-01-30 19:15:15,255:INFO: - Eval segmentation accuracy: 0.5859
+2022-01-30 19:15:15,278:INFO: - Eval metrics: loss: 1.802 ; accuracy: 0.800
+2022-01-30 19:15:15,311:INFO: - Test segmentation accuracy: 0.6570
+2022-01-30 19:15:15,311:INFO: Epoch 54/200
+2022-01-30 19:15:15,401:INFO: - Train metrics: loss: 1.640 ; accuracy: 0.900
+2022-01-30 19:15:15,468:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:15,560:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:15,665:INFO: - Train segmentation accuracy: 0.7674
+2022-01-30 19:15:15,697:INFO: - Eval metrics: loss: 17.666 ; accuracy: 0.200
+2022-01-30 19:15:15,734:INFO: - Eval segmentation accuracy: 0.5707
+2022-01-30 19:15:15,763:INFO: - Eval metrics: loss: 10.198 ; accuracy: 0.200
+2022-01-30 19:15:15,801:INFO: - Test segmentation accuracy: 0.5565
+2022-01-30 19:15:15,802:INFO: Epoch 55/200
+2022-01-30 19:15:15,929:INFO: - Train metrics: loss: 1.377 ; accuracy: 1.000
+2022-01-30 19:15:15,994:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:16,091:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:16,194:INFO: - Train segmentation accuracy: 0.7672
+2022-01-30 19:15:16,224:INFO: - Eval metrics: loss: 34.941 ; accuracy: 0.200
+2022-01-30 19:15:16,264:INFO: - Eval segmentation accuracy: 0.5027
+2022-01-30 19:15:16,293:INFO: - Eval metrics: loss: 26.710 ; accuracy: 0.200
+2022-01-30 19:15:16,332:INFO: - Test segmentation accuracy: 0.4666
+2022-01-30 19:15:16,332:INFO: Epoch 56/200
+2022-01-30 19:15:16,462:INFO: - Train metrics: loss: 1.395 ; accuracy: 1.000
+2022-01-30 19:15:16,526:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:16,620:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:16,727:INFO: - Train segmentation accuracy: 0.7563
+2022-01-30 19:15:16,758:INFO: - Eval metrics: loss: 35.751 ; accuracy: 0.200
+2022-01-30 19:15:16,799:INFO: - Eval segmentation accuracy: 0.4328
+2022-01-30 19:15:16,826:INFO: - Eval metrics: loss: 35.749 ; accuracy: 0.200
+2022-01-30 19:15:16,864:INFO: - Test segmentation accuracy: 0.3739
+2022-01-30 19:15:16,865:INFO: Epoch 57/200
+2022-01-30 19:15:16,995:INFO: - Train metrics: loss: 1.373 ; accuracy: 1.000
+2022-01-30 19:15:17,061:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:17,155:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:17,263:INFO: - Train segmentation accuracy: 0.7494
+2022-01-30 19:15:17,292:INFO: - Eval metrics: loss: 35.748 ; accuracy: 0.200
+2022-01-30 19:15:17,331:INFO: - Eval segmentation accuracy: 0.4136
+2022-01-30 19:15:17,358:INFO: - Eval metrics: loss: 35.748 ; accuracy: 0.200
+2022-01-30 19:15:17,398:INFO: - Test segmentation accuracy: 0.3474
+2022-01-30 19:15:17,398:INFO: Epoch 58/200
+2022-01-30 19:15:17,525:INFO: - Train metrics: loss: 1.355 ; accuracy: 1.000
+2022-01-30 19:15:17,590:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:17,683:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:17,792:INFO: - Train segmentation accuracy: 0.7695
+2022-01-30 19:15:17,821:INFO: - Eval metrics: loss: 35.746 ; accuracy: 0.200
+2022-01-30 19:15:17,861:INFO: - Eval segmentation accuracy: 0.4102
+2022-01-30 19:15:17,890:INFO: - Eval metrics: loss: 35.746 ; accuracy: 0.200
+2022-01-30 19:15:17,930:INFO: - Test segmentation accuracy: 0.3423
+2022-01-30 19:15:17,931:INFO: Epoch 59/200
+2022-01-30 19:15:18,060:INFO: - Train metrics: loss: 1.346 ; accuracy: 1.000
+2022-01-30 19:15:18,126:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:18,223:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:18,328:INFO: - Train segmentation accuracy: 0.7582
+2022-01-30 19:15:18,358:INFO: - Eval metrics: loss: 35.744 ; accuracy: 0.200
+2022-01-30 19:15:18,397:INFO: - Eval segmentation accuracy: 0.4097
+2022-01-30 19:15:18,425:INFO: - Eval metrics: loss: 35.744 ; accuracy: 0.200
+2022-01-30 19:15:18,464:INFO: - Test segmentation accuracy: 0.3429
+2022-01-30 19:15:18,465:INFO: Epoch 60/200
+2022-01-30 19:15:18,594:INFO: - Train metrics: loss: 1.355 ; accuracy: 1.000
+2022-01-30 19:15:18,660:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:18,755:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:18,860:INFO: - Train segmentation accuracy: 0.7446
+2022-01-30 19:15:18,892:INFO: - Eval metrics: loss: 35.743 ; accuracy: 0.200
+2022-01-30 19:15:18,930:INFO: - Eval segmentation accuracy: 0.4115
+2022-01-30 19:15:18,958:INFO: - Eval metrics: loss: 35.743 ; accuracy: 0.200
+2022-01-30 19:15:18,997:INFO: - Test segmentation accuracy: 0.3496
+2022-01-30 19:15:18,998:INFO: Epoch 61/200
+2022-01-30 19:15:19,124:INFO: - Train metrics: loss: 1.344 ; accuracy: 1.000
+2022-01-30 19:15:19,192:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:19,284:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:19,391:INFO: - Train segmentation accuracy: 0.7664
+2022-01-30 19:15:19,417:INFO: - Eval metrics: loss: 35.741 ; accuracy: 0.200
+2022-01-30 19:15:19,456:INFO: - Eval segmentation accuracy: 0.4175
+2022-01-30 19:15:19,486:INFO: - Eval metrics: loss: 35.741 ; accuracy: 0.200
+2022-01-30 19:15:19,526:INFO: - Test segmentation accuracy: 0.3561
+2022-01-30 19:15:19,526:INFO: Epoch 62/200
+2022-01-30 19:15:19,656:INFO: - Train metrics: loss: 1.335 ; accuracy: 1.000
+2022-01-30 19:15:19,723:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:19,814:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:19,922:INFO: - Train segmentation accuracy: 0.7584
+2022-01-30 19:15:19,948:INFO: - Eval metrics: loss: 35.739 ; accuracy: 0.200
+2022-01-30 19:15:19,987:INFO: - Eval segmentation accuracy: 0.4324
+2022-01-30 19:15:20,017:INFO: - Eval metrics: loss: 35.739 ; accuracy: 0.200
+2022-01-30 19:15:20,053:INFO: - Test segmentation accuracy: 0.3648
+2022-01-30 19:15:20,054:INFO: Epoch 63/200
+2022-01-30 19:15:20,180:INFO: - Train metrics: loss: 1.331 ; accuracy: 1.000
+2022-01-30 19:15:20,250:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:20,345:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:20,451:INFO: - Train segmentation accuracy: 0.7562
+2022-01-30 19:15:20,481:INFO: - Eval metrics: loss: 32.771 ; accuracy: 0.200
+2022-01-30 19:15:20,517:INFO: - Eval segmentation accuracy: 0.4575
+2022-01-30 19:15:20,546:INFO: - Eval metrics: loss: 35.731 ; accuracy: 0.200
+2022-01-30 19:15:20,584:INFO: - Test segmentation accuracy: 0.3733
+2022-01-30 19:15:20,585:INFO: Epoch 64/200
+2022-01-30 19:15:20,714:INFO: - Train metrics: loss: 1.320 ; accuracy: 1.000
+2022-01-30 19:15:20,782:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:20,872:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:20,979:INFO: - Train segmentation accuracy: 0.7553
+2022-01-30 19:15:21,006:INFO: - Eval metrics: loss: 28.228 ; accuracy: 0.200
+2022-01-30 19:15:21,042:INFO: - Eval segmentation accuracy: 0.4964
+2022-01-30 19:15:21,071:INFO: - Eval metrics: loss: 32.811 ; accuracy: 0.200
+2022-01-30 19:15:21,110:INFO: - Test segmentation accuracy: 0.3805
+2022-01-30 19:15:21,110:INFO: Epoch 65/200
+2022-01-30 19:15:21,239:INFO: - Train metrics: loss: 1.314 ; accuracy: 1.000
+2022-01-30 19:15:21,305:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:21,396:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:21,501:INFO: - Train segmentation accuracy: 0.7571
+2022-01-30 19:15:21,531:INFO: - Eval metrics: loss: 27.195 ; accuracy: 0.400
+2022-01-30 19:15:21,569:INFO: - Eval segmentation accuracy: 0.5260
+2022-01-30 19:15:21,600:INFO: - Eval metrics: loss: 29.799 ; accuracy: 0.200
+2022-01-30 19:15:21,640:INFO: - Test segmentation accuracy: 0.3825
+2022-01-30 19:15:21,641:INFO: Epoch 66/200
+2022-01-30 19:15:21,795:INFO: - Train metrics: loss: 1.304 ; accuracy: 1.000
+2022-01-30 19:15:21,865:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:21,965:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:22,076:INFO: - Train segmentation accuracy: 0.7602
+2022-01-30 19:15:22,103:INFO: - Eval metrics: loss: 27.165 ; accuracy: 0.400
+2022-01-30 19:15:22,141:INFO: - Eval segmentation accuracy: 0.5333
+2022-01-30 19:15:22,171:INFO: - Eval metrics: loss: 27.377 ; accuracy: 0.200
+2022-01-30 19:15:22,212:INFO: - Test segmentation accuracy: 0.4015
+2022-01-30 19:15:22,212:INFO: Epoch 67/200
+2022-01-30 19:15:22,345:INFO: - Train metrics: loss: 1.293 ; accuracy: 1.000
+2022-01-30 19:15:22,410:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:22,501:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:22,607:INFO: - Train segmentation accuracy: 0.7514
+2022-01-30 19:15:22,638:INFO: - Eval metrics: loss: 27.102 ; accuracy: 0.400
+2022-01-30 19:15:22,676:INFO: - Eval segmentation accuracy: 0.5437
+2022-01-30 19:15:22,707:INFO: - Eval metrics: loss: 24.791 ; accuracy: 0.400
+2022-01-30 19:15:22,742:INFO: - Test segmentation accuracy: 0.4786
+2022-01-30 19:15:22,742:INFO: Epoch 68/200
+2022-01-30 19:15:22,869:INFO: - Train metrics: loss: 1.281 ; accuracy: 1.000
+2022-01-30 19:15:22,933:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:23,025:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:23,131:INFO: - Train segmentation accuracy: 0.7628
+2022-01-30 19:15:23,160:INFO: - Eval metrics: loss: 25.744 ; accuracy: 0.400
+2022-01-30 19:15:23,198:INFO: - Eval segmentation accuracy: 0.5538
+2022-01-30 19:15:23,231:INFO: - Eval metrics: loss: 22.575 ; accuracy: 0.400
+2022-01-30 19:15:23,269:INFO: - Test segmentation accuracy: 0.5043
+2022-01-30 19:15:23,270:INFO: Epoch 69/200
+2022-01-30 19:15:23,402:INFO: - Train metrics: loss: 1.269 ; accuracy: 1.000
+2022-01-30 19:15:23,471:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:23,570:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:23,676:INFO: - Train segmentation accuracy: 0.7576
+2022-01-30 19:15:23,702:INFO: - Eval metrics: loss: 23.675 ; accuracy: 0.400
+2022-01-30 19:15:23,740:INFO: - Eval segmentation accuracy: 0.5641
+2022-01-30 19:15:23,765:INFO: - Eval metrics: loss: 18.704 ; accuracy: 0.400
+2022-01-30 19:15:23,803:INFO: - Test segmentation accuracy: 0.5398
+2022-01-30 19:15:23,804:INFO: Epoch 70/200
+2022-01-30 19:15:23,933:INFO: - Train metrics: loss: 1.258 ; accuracy: 1.000
+2022-01-30 19:15:23,998:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:24,091:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:24,192:INFO: - Train segmentation accuracy: 0.7535
+2022-01-30 19:15:24,226:INFO: - Eval metrics: loss: 21.995 ; accuracy: 0.400
+2022-01-30 19:15:24,264:INFO: - Eval segmentation accuracy: 0.5786
+2022-01-30 19:15:24,293:INFO: - Eval metrics: loss: 14.827 ; accuracy: 0.400
+2022-01-30 19:15:24,328:INFO: - Test segmentation accuracy: 0.5773
+2022-01-30 19:15:24,329:INFO: Epoch 71/200
+2022-01-30 19:15:24,456:INFO: - Train metrics: loss: 1.242 ; accuracy: 1.000
+2022-01-30 19:15:24,529:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:24,630:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:24,736:INFO: - Train segmentation accuracy: 0.7682
+2022-01-30 19:15:24,767:INFO: - Eval metrics: loss: 18.655 ; accuracy: 0.400
+2022-01-30 19:15:24,807:INFO: - Eval segmentation accuracy: 0.5945
+2022-01-30 19:15:24,835:INFO: - Eval metrics: loss: 9.804 ; accuracy: 0.400
+2022-01-30 19:15:24,874:INFO: - Test segmentation accuracy: 0.6138
+2022-01-30 19:15:24,875:INFO: Epoch 72/200
+2022-01-30 19:15:25,003:INFO: - Train metrics: loss: 1.229 ; accuracy: 1.000
+2022-01-30 19:15:25,073:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:25,166:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:25,273:INFO: - Train segmentation accuracy: 0.7600
+2022-01-30 19:15:25,300:INFO: - Eval metrics: loss: 15.244 ; accuracy: 0.400
+2022-01-30 19:15:25,338:INFO: - Eval segmentation accuracy: 0.6078
+2022-01-30 19:15:25,366:INFO: - Eval metrics: loss: 6.281 ; accuracy: 0.400
+2022-01-30 19:15:25,405:INFO: - Test segmentation accuracy: 0.6529
+2022-01-30 19:15:25,405:INFO: Epoch 73/200
+2022-01-30 19:15:25,532:INFO: - Train metrics: loss: 1.215 ; accuracy: 1.000
+2022-01-30 19:15:25,597:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:25,691:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:25,803:INFO: - Train segmentation accuracy: 0.7579
+2022-01-30 19:15:25,832:INFO: - Eval metrics: loss: 10.472 ; accuracy: 0.400
+2022-01-30 19:15:25,871:INFO: - Eval segmentation accuracy: 0.6211
+2022-01-30 19:15:25,900:INFO: - Eval metrics: loss: 3.816 ; accuracy: 0.600
+2022-01-30 19:15:25,937:INFO: - Test segmentation accuracy: 0.6850
+2022-01-30 19:15:25,938:INFO: Epoch 74/200
+2022-01-30 19:15:26,068:INFO: - Train metrics: loss: 1.200 ; accuracy: 1.000
+2022-01-30 19:15:26,133:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:26,227:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:26,335:INFO: - Train segmentation accuracy: 0.7593
+2022-01-30 19:15:26,363:INFO: - Eval metrics: loss: 7.214 ; accuracy: 0.400
+2022-01-30 19:15:26,402:INFO: - Eval segmentation accuracy: 0.6391
+2022-01-30 19:15:26,432:INFO: - Eval metrics: loss: 2.507 ; accuracy: 0.800
+2022-01-30 19:15:26,468:INFO: - Test segmentation accuracy: 0.7029
+2022-01-30 19:15:26,469:INFO: Epoch 75/200
+2022-01-30 19:15:26,601:INFO: - Train metrics: loss: 1.186 ; accuracy: 1.000
+2022-01-30 19:15:26,667:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:26,760:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:26,868:INFO: - Train segmentation accuracy: 0.7620
+2022-01-30 19:15:26,899:INFO: - Eval metrics: loss: 4.917 ; accuracy: 0.600
+2022-01-30 19:15:26,939:INFO: - Eval segmentation accuracy: 0.6543
+2022-01-30 19:15:26,971:INFO: - Eval metrics: loss: 1.728 ; accuracy: 0.800
+2022-01-30 19:15:27,010:INFO: - Test segmentation accuracy: 0.7172
+2022-01-30 19:15:27,011:INFO: Epoch 76/200
+2022-01-30 19:15:27,139:INFO: - Train metrics: loss: 1.169 ; accuracy: 1.000
+2022-01-30 19:15:27,207:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:27,302:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:27,407:INFO: - Train segmentation accuracy: 0.7622
+2022-01-30 19:15:27,439:INFO: - Eval metrics: loss: 3.319 ; accuracy: 0.600
+2022-01-30 19:15:27,477:INFO: - Eval segmentation accuracy: 0.6422
+2022-01-30 19:15:27,505:INFO: - Eval metrics: loss: 1.337 ; accuracy: 1.000
+2022-01-30 19:15:27,544:INFO: - Test segmentation accuracy: 0.7110
+2022-01-30 19:15:27,544:INFO: Epoch 77/200
+2022-01-30 19:15:27,672:INFO: - Train metrics: loss: 1.154 ; accuracy: 1.000
+2022-01-30 19:15:27,740:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:27,836:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:27,941:INFO: - Train segmentation accuracy: 0.7559
+2022-01-30 19:15:27,971:INFO: - Eval metrics: loss: 2.416 ; accuracy: 0.600
+2022-01-30 19:15:28,009:INFO: - Eval segmentation accuracy: 0.6048
+2022-01-30 19:15:28,037:INFO: - Eval metrics: loss: 1.234 ; accuracy: 1.000
+2022-01-30 19:15:28,077:INFO: - Test segmentation accuracy: 0.7065
+2022-01-30 19:15:28,078:INFO: Epoch 78/200
+2022-01-30 19:15:28,206:INFO: - Train metrics: loss: 1.137 ; accuracy: 1.000
+2022-01-30 19:15:28,272:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:28,365:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:28,467:INFO: - Train segmentation accuracy: 0.7582
+2022-01-30 19:15:28,494:INFO: - Eval metrics: loss: 1.891 ; accuracy: 0.600
+2022-01-30 19:15:28,530:INFO: - Eval segmentation accuracy: 0.5820
+2022-01-30 19:15:28,563:INFO: - Eval metrics: loss: 1.278 ; accuracy: 0.800
+2022-01-30 19:15:28,599:INFO: - Test segmentation accuracy: 0.6964
+2022-01-30 19:15:28,599:INFO: Epoch 79/200
+2022-01-30 19:15:28,725:INFO: - Train metrics: loss: 1.121 ; accuracy: 1.000
+2022-01-30 19:15:28,791:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:28,884:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:28,989:INFO: - Train segmentation accuracy: 0.7576
+2022-01-30 19:15:29,020:INFO: - Eval metrics: loss: 1.609 ; accuracy: 0.800
+2022-01-30 19:15:29,059:INFO: - Eval segmentation accuracy: 0.5945
+2022-01-30 19:15:29,087:INFO: - Eval metrics: loss: 1.407 ; accuracy: 0.800
+2022-01-30 19:15:29,125:INFO: - Test segmentation accuracy: 0.6766
+2022-01-30 19:15:29,126:INFO: Epoch 80/200
+2022-01-30 19:15:29,257:INFO: - Train metrics: loss: 1.107 ; accuracy: 1.000
+2022-01-30 19:15:29,322:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:29,416:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:29,522:INFO: - Train segmentation accuracy: 0.7529
+2022-01-30 19:15:29,553:INFO: - Eval metrics: loss: 1.517 ; accuracy: 0.800
+2022-01-30 19:15:29,592:INFO: - Eval segmentation accuracy: 0.5974
+2022-01-30 19:15:29,620:INFO: - Eval metrics: loss: 1.464 ; accuracy: 0.800
+2022-01-30 19:15:29,659:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:29,659:INFO: Epoch 81/200
+2022-01-30 19:15:29,786:INFO: - Train metrics: loss: 1.091 ; accuracy: 1.000
+2022-01-30 19:15:29,852:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:29,945:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:30,049:INFO: - Train segmentation accuracy: 0.7548
+2022-01-30 19:15:30,078:INFO: - Eval metrics: loss: 1.487 ; accuracy: 0.800
+2022-01-30 19:15:30,114:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:15:30,143:INFO: - Eval metrics: loss: 1.464 ; accuracy: 0.800
+2022-01-30 19:15:30,179:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:30,180:INFO: Epoch 82/200
+2022-01-30 19:15:30,308:INFO: - Train metrics: loss: 1.075 ; accuracy: 1.000
+2022-01-30 19:15:30,374:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:30,468:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:30,576:INFO: - Train segmentation accuracy: 0.7588
+2022-01-30 19:15:30,607:INFO: - Eval metrics: loss: 1.472 ; accuracy: 0.800
+2022-01-30 19:15:30,645:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:15:30,676:INFO: - Eval metrics: loss: 1.457 ; accuracy: 0.800
+2022-01-30 19:15:30,714:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:30,714:INFO: Epoch 83/200
+2022-01-30 19:15:30,841:INFO: - Train metrics: loss: 1.060 ; accuracy: 1.000
+2022-01-30 19:15:30,906:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:31,001:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:31,105:INFO: - Train segmentation accuracy: 0.7549
+2022-01-30 19:15:31,136:INFO: - Eval metrics: loss: 1.462 ; accuracy: 0.800
+2022-01-30 19:15:31,176:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:15:31,209:INFO: - Eval metrics: loss: 1.446 ; accuracy: 0.800
+2022-01-30 19:15:31,247:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:31,247:INFO: Epoch 84/200
+2022-01-30 19:15:31,373:INFO: - Train metrics: loss: 1.045 ; accuracy: 1.000
+2022-01-30 19:15:31,439:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:31,534:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:31,640:INFO: - Train segmentation accuracy: 0.7532
+2022-01-30 19:15:31,671:INFO: - Eval metrics: loss: 1.453 ; accuracy: 0.800
+2022-01-30 19:15:31,708:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:15:31,736:INFO: - Eval metrics: loss: 1.434 ; accuracy: 0.800
+2022-01-30 19:15:31,774:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:31,774:INFO: Epoch 85/200
+2022-01-30 19:15:31,903:INFO: - Train metrics: loss: 1.030 ; accuracy: 1.000
+2022-01-30 19:15:31,968:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:32,061:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:32,165:INFO: - Train segmentation accuracy: 0.7519
+2022-01-30 19:15:32,192:INFO: - Eval metrics: loss: 1.444 ; accuracy: 0.800
+2022-01-30 19:15:32,231:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:15:32,257:INFO: - Eval metrics: loss: 1.421 ; accuracy: 0.800
+2022-01-30 19:15:32,293:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:32,294:INFO: Epoch 86/200
+2022-01-30 19:15:32,421:INFO: - Train metrics: loss: 1.016 ; accuracy: 1.000
+2022-01-30 19:15:32,490:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:32,585:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:32,690:INFO: - Train segmentation accuracy: 0.7631
+2022-01-30 19:15:32,720:INFO: - Eval metrics: loss: 1.434 ; accuracy: 0.800
+2022-01-30 19:15:32,758:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:15:32,786:INFO: - Eval metrics: loss: 1.408 ; accuracy: 0.800
+2022-01-30 19:15:32,823:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:32,824:INFO: Epoch 87/200
+2022-01-30 19:15:32,951:INFO: - Train metrics: loss: 1.002 ; accuracy: 1.000
+2022-01-30 19:15:33,016:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:33,113:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:33,221:INFO: - Train segmentation accuracy: 0.7577
+2022-01-30 19:15:33,249:INFO: - Eval metrics: loss: 1.423 ; accuracy: 0.800
+2022-01-30 19:15:33,289:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:15:33,318:INFO: - Eval metrics: loss: 1.397 ; accuracy: 0.800
+2022-01-30 19:15:33,356:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:33,357:INFO: Epoch 88/200
+2022-01-30 19:15:33,485:INFO: - Train metrics: loss: 0.987 ; accuracy: 1.000
+2022-01-30 19:15:33,549:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:33,643:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:33,748:INFO: - Train segmentation accuracy: 0.7516
+2022-01-30 19:15:33,777:INFO: - Eval metrics: loss: 1.412 ; accuracy: 0.800
+2022-01-30 19:15:33,813:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:15:33,840:INFO: - Eval metrics: loss: 1.387 ; accuracy: 0.800
+2022-01-30 19:15:33,876:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:33,877:INFO: Epoch 89/200
+2022-01-30 19:15:34,003:INFO: - Train metrics: loss: 0.974 ; accuracy: 1.000
+2022-01-30 19:15:34,069:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:34,161:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:34,269:INFO: - Train segmentation accuracy: 0.7580
+2022-01-30 19:15:34,297:INFO: - Eval metrics: loss: 1.400 ; accuracy: 0.800
+2022-01-30 19:15:34,335:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:15:34,364:INFO: - Eval metrics: loss: 1.378 ; accuracy: 0.800
+2022-01-30 19:15:34,400:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:34,401:INFO: Epoch 90/200
+2022-01-30 19:15:34,530:INFO: - Train metrics: loss: 0.961 ; accuracy: 1.000
+2022-01-30 19:15:34,595:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:34,688:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:34,792:INFO: - Train segmentation accuracy: 0.7481
+2022-01-30 19:15:34,822:INFO: - Eval metrics: loss: 1.389 ; accuracy: 0.800
+2022-01-30 19:15:34,859:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:15:34,889:INFO: - Eval metrics: loss: 1.369 ; accuracy: 0.800
+2022-01-30 19:15:34,926:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:34,927:INFO: Epoch 91/200
+2022-01-30 19:15:35,056:INFO: - Train metrics: loss: 0.948 ; accuracy: 1.000
+2022-01-30 19:15:35,121:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:35,219:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:35,326:INFO: - Train segmentation accuracy: 0.7456
+2022-01-30 19:15:35,358:INFO: - Eval metrics: loss: 1.377 ; accuracy: 0.800
+2022-01-30 19:15:35,394:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:15:35,422:INFO: - Eval metrics: loss: 1.359 ; accuracy: 0.800
+2022-01-30 19:15:35,459:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:35,459:INFO: Epoch 92/200
+2022-01-30 19:15:35,585:INFO: - Train metrics: loss: 0.937 ; accuracy: 1.000
+2022-01-30 19:15:35,651:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:35,744:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:35,849:INFO: - Train segmentation accuracy: 0.7490
+2022-01-30 19:15:35,881:INFO: - Eval metrics: loss: 1.367 ; accuracy: 0.800
+2022-01-30 19:15:35,918:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:15:35,949:INFO: - Eval metrics: loss: 1.346 ; accuracy: 0.800
+2022-01-30 19:15:35,986:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:35,987:INFO: Epoch 93/200
+2022-01-30 19:15:36,116:INFO: - Train metrics: loss: 0.922 ; accuracy: 1.000
+2022-01-30 19:15:36,183:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:36,276:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:36,381:INFO: - Train segmentation accuracy: 0.7377
+2022-01-30 19:15:36,412:INFO: - Eval metrics: loss: 1.357 ; accuracy: 0.800
+2022-01-30 19:15:36,451:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:15:36,481:INFO: - Eval metrics: loss: 1.334 ; accuracy: 0.800
+2022-01-30 19:15:36,518:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:36,519:INFO: Epoch 94/200
+2022-01-30 19:15:36,649:INFO: - Train metrics: loss: 0.911 ; accuracy: 1.000
+2022-01-30 19:15:36,714:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:36,807:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:36,911:INFO: - Train segmentation accuracy: 0.7464
+2022-01-30 19:15:36,943:INFO: - Eval metrics: loss: 1.345 ; accuracy: 0.800
+2022-01-30 19:15:36,985:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:15:37,015:INFO: - Eval metrics: loss: 1.327 ; accuracy: 0.800
+2022-01-30 19:15:37,057:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:37,058:INFO: Epoch 95/200
+2022-01-30 19:15:37,185:INFO: - Train metrics: loss: 0.898 ; accuracy: 1.000
+2022-01-30 19:15:37,251:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:37,346:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:37,452:INFO: - Train segmentation accuracy: 0.7529
+2022-01-30 19:15:37,483:INFO: - Eval metrics: loss: 1.332 ; accuracy: 0.800
+2022-01-30 19:15:37,521:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:15:37,548:INFO: - Eval metrics: loss: 1.321 ; accuracy: 0.800
+2022-01-30 19:15:37,588:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:37,589:INFO: Epoch 96/200
+2022-01-30 19:15:37,717:INFO: - Train metrics: loss: 0.887 ; accuracy: 1.000
+2022-01-30 19:15:37,783:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:37,877:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:37,982:INFO: - Train segmentation accuracy: 0.7576
+2022-01-30 19:15:38,013:INFO: - Eval metrics: loss: 1.320 ; accuracy: 0.800
+2022-01-30 19:15:38,053:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:15:38,081:INFO: - Eval metrics: loss: 1.313 ; accuracy: 0.800
+2022-01-30 19:15:38,122:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:38,123:INFO: Epoch 97/200
+2022-01-30 19:15:38,251:INFO: - Train metrics: loss: 0.875 ; accuracy: 1.000
+2022-01-30 19:15:38,315:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:38,408:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:38,516:INFO: - Train segmentation accuracy: 0.7429
+2022-01-30 19:15:38,548:INFO: - Eval metrics: loss: 1.311 ; accuracy: 0.800
+2022-01-30 19:15:38,588:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:15:38,615:INFO: - Eval metrics: loss: 1.300 ; accuracy: 0.800
+2022-01-30 19:15:38,654:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:38,655:INFO: Epoch 98/200
+2022-01-30 19:15:38,785:INFO: - Train metrics: loss: 0.864 ; accuracy: 1.000
+2022-01-30 19:15:38,848:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:38,947:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:39,055:INFO: - Train segmentation accuracy: 0.7367
+2022-01-30 19:15:39,086:INFO: - Eval metrics: loss: 1.300 ; accuracy: 0.800
+2022-01-30 19:15:39,123:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:15:39,150:INFO: - Eval metrics: loss: 1.291 ; accuracy: 0.800
+2022-01-30 19:15:39,189:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:39,190:INFO: Epoch 99/200
+2022-01-30 19:15:39,319:INFO: - Train metrics: loss: 0.853 ; accuracy: 1.000
+2022-01-30 19:15:39,386:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:39,479:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:39,583:INFO: - Train segmentation accuracy: 0.7539
+2022-01-30 19:15:39,615:INFO: - Eval metrics: loss: 1.288 ; accuracy: 0.800
+2022-01-30 19:15:39,653:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:15:39,682:INFO: - Eval metrics: loss: 1.280 ; accuracy: 0.800
+2022-01-30 19:15:39,719:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:39,720:INFO: Epoch 100/200
+2022-01-30 19:15:39,849:INFO: - Train metrics: loss: 0.843 ; accuracy: 1.000
+2022-01-30 19:15:39,917:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:40,010:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:40,114:INFO: - Train segmentation accuracy: 0.7470
+2022-01-30 19:15:40,141:INFO: - Eval metrics: loss: 1.276 ; accuracy: 0.800
+2022-01-30 19:15:40,181:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:15:40,211:INFO: - Eval metrics: loss: 1.269 ; accuracy: 0.800
+2022-01-30 19:15:40,248:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:40,249:INFO: Epoch 101/200
+2022-01-30 19:15:40,378:INFO: - Train metrics: loss: 0.832 ; accuracy: 1.000
+2022-01-30 19:15:40,444:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:40,539:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:40,645:INFO: - Train segmentation accuracy: 0.7498
+2022-01-30 19:15:40,671:INFO: - Eval metrics: loss: 1.263 ; accuracy: 0.800
+2022-01-30 19:15:40,709:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:15:40,739:INFO: - Eval metrics: loss: 1.256 ; accuracy: 0.800
+2022-01-30 19:15:40,776:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:40,777:INFO: Epoch 102/200
+2022-01-30 19:15:40,915:INFO: - Train metrics: loss: 0.822 ; accuracy: 1.000
+2022-01-30 19:15:40,982:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:41,072:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:41,180:INFO: - Train segmentation accuracy: 0.7544
+2022-01-30 19:15:41,205:INFO: - Eval metrics: loss: 1.253 ; accuracy: 0.800
+2022-01-30 19:15:41,247:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:15:41,274:INFO: - Eval metrics: loss: 1.243 ; accuracy: 0.800
+2022-01-30 19:15:41,314:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:41,315:INFO: Epoch 103/200
+2022-01-30 19:15:41,446:INFO: - Train metrics: loss: 0.811 ; accuracy: 1.000
+2022-01-30 19:15:41,513:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:41,605:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:41,710:INFO: - Train segmentation accuracy: 0.7491
+2022-01-30 19:15:41,741:INFO: - Eval metrics: loss: 1.245 ; accuracy: 0.800
+2022-01-30 19:15:41,782:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:15:41,809:INFO: - Eval metrics: loss: 1.234 ; accuracy: 0.800
+2022-01-30 19:15:41,848:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:41,849:INFO: Epoch 104/200
+2022-01-30 19:15:41,979:INFO: - Train metrics: loss: 0.802 ; accuracy: 1.000
+2022-01-30 19:15:42,046:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:42,141:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:42,248:INFO: - Train segmentation accuracy: 0.7590
+2022-01-30 19:15:42,278:INFO: - Eval metrics: loss: 1.238 ; accuracy: 0.800
+2022-01-30 19:15:42,318:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:15:42,349:INFO: - Eval metrics: loss: 1.231 ; accuracy: 0.800
+2022-01-30 19:15:42,385:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:42,386:INFO: Epoch 105/200
+2022-01-30 19:15:42,599:INFO: - Train metrics: loss: 0.792 ; accuracy: 1.000
+2022-01-30 19:15:42,661:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:42,744:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:42,836:INFO: - Train segmentation accuracy: 0.7418
+2022-01-30 19:15:42,860:INFO: - Eval metrics: loss: 1.230 ; accuracy: 0.800
+2022-01-30 19:15:42,895:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:15:42,920:INFO: - Eval metrics: loss: 1.237 ; accuracy: 0.800
+2022-01-30 19:15:42,956:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:42,956:INFO: Epoch 106/200
+2022-01-30 19:15:43,047:INFO: - Train metrics: loss: 0.784 ; accuracy: 1.000
+2022-01-30 19:15:43,116:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:43,197:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:43,289:INFO: - Train segmentation accuracy: 0.7546
+2022-01-30 19:15:43,313:INFO: - Eval metrics: loss: 1.221 ; accuracy: 0.800
+2022-01-30 19:15:43,344:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:15:43,366:INFO: - Eval metrics: loss: 1.230 ; accuracy: 0.800
+2022-01-30 19:15:43,398:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:43,399:INFO: Epoch 107/200
+2022-01-30 19:15:43,492:INFO: - Train metrics: loss: 0.775 ; accuracy: 1.000
+2022-01-30 19:15:43,560:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:43,640:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:43,737:INFO: - Train segmentation accuracy: 0.7508
+2022-01-30 19:15:43,762:INFO: - Eval metrics: loss: 1.219 ; accuracy: 0.800
+2022-01-30 19:15:43,795:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:15:43,821:INFO: - Eval metrics: loss: 1.221 ; accuracy: 0.800
+2022-01-30 19:15:43,857:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:43,857:INFO: Epoch 108/200
+2022-01-30 19:15:43,945:INFO: - Train metrics: loss: 0.769 ; accuracy: 1.000
+2022-01-30 19:15:44,013:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:44,100:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:44,191:INFO: - Train segmentation accuracy: 0.7484
+2022-01-30 19:15:44,217:INFO: - Eval metrics: loss: 1.213 ; accuracy: 0.800
+2022-01-30 19:15:44,249:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:15:44,271:INFO: - Eval metrics: loss: 1.203 ; accuracy: 0.800
+2022-01-30 19:15:44,303:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:44,304:INFO: Epoch 109/200
+2022-01-30 19:15:44,397:INFO: - Train metrics: loss: 0.759 ; accuracy: 1.000
+2022-01-30 19:15:44,462:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:44,556:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:44,661:INFO: - Train segmentation accuracy: 0.7476
+2022-01-30 19:15:44,687:INFO: - Eval metrics: loss: 1.213 ; accuracy: 0.800
+2022-01-30 19:15:44,724:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:15:44,751:INFO: - Eval metrics: loss: 1.185 ; accuracy: 0.800
+2022-01-30 19:15:44,788:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:44,788:INFO: Epoch 110/200
+2022-01-30 19:15:44,918:INFO: - Train metrics: loss: 0.753 ; accuracy: 1.000
+2022-01-30 19:15:44,983:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:45,080:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:45,185:INFO: - Train segmentation accuracy: 0.7599
+2022-01-30 19:15:45,212:INFO: - Eval metrics: loss: 1.234 ; accuracy: 0.800
+2022-01-30 19:15:45,250:INFO: - Eval segmentation accuracy: 0.5951
+2022-01-30 19:15:45,277:INFO: - Eval metrics: loss: 1.164 ; accuracy: 0.800
+2022-01-30 19:15:45,318:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:45,318:INFO: Epoch 111/200
+2022-01-30 19:15:45,451:INFO: - Train metrics: loss: 0.750 ; accuracy: 1.000
+2022-01-30 19:15:45,519:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:45,615:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:45,720:INFO: - Train segmentation accuracy: 0.7578
+2022-01-30 19:15:45,752:INFO: - Eval metrics: loss: 1.201 ; accuracy: 0.800
+2022-01-30 19:15:45,794:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:15:45,824:INFO: - Eval metrics: loss: 1.199 ; accuracy: 0.800
+2022-01-30 19:15:45,861:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:45,861:INFO: Epoch 112/200
+2022-01-30 19:15:45,997:INFO: - Train metrics: loss: 0.746 ; accuracy: 1.000
+2022-01-30 19:15:46,063:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:46,159:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:46,273:INFO: - Train segmentation accuracy: 0.7489
+2022-01-30 19:15:46,304:INFO: - Eval metrics: loss: 1.194 ; accuracy: 0.800
+2022-01-30 19:15:46,345:INFO: - Eval segmentation accuracy: 0.5924
+2022-01-30 19:15:46,377:INFO: - Eval metrics: loss: 1.174 ; accuracy: 0.800
+2022-01-30 19:15:46,415:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:46,416:INFO: Epoch 113/200
+2022-01-30 19:15:46,550:INFO: - Train metrics: loss: 0.741 ; accuracy: 1.000
+2022-01-30 19:15:46,614:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:46,710:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:46,820:INFO: - Train segmentation accuracy: 0.7514
+2022-01-30 19:15:46,849:INFO: - Eval metrics: loss: 1.190 ; accuracy: 0.800
+2022-01-30 19:15:46,887:INFO: - Eval segmentation accuracy: 0.5813
+2022-01-30 19:15:46,918:INFO: - Eval metrics: loss: 1.170 ; accuracy: 0.800
+2022-01-30 19:15:46,956:INFO: - Test segmentation accuracy: 0.6637
+2022-01-30 19:15:46,957:INFO: Epoch 114/200
+2022-01-30 19:15:47,087:INFO: - Train metrics: loss: 0.734 ; accuracy: 1.000
+2022-01-30 19:15:47,154:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:47,253:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:47,361:INFO: - Train segmentation accuracy: 0.7549
+2022-01-30 19:15:47,386:INFO: - Eval metrics: loss: 1.166 ; accuracy: 0.800
+2022-01-30 19:15:47,427:INFO: - Eval segmentation accuracy: 0.5961
+2022-01-30 19:15:47,455:INFO: - Eval metrics: loss: 1.177 ; accuracy: 0.800
+2022-01-30 19:15:47,496:INFO: - Test segmentation accuracy: 0.6687
+2022-01-30 19:15:47,496:INFO: Epoch 115/200
+2022-01-30 19:15:47,629:INFO: - Train metrics: loss: 0.723 ; accuracy: 1.000
+2022-01-30 19:15:47,695:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:47,790:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:47,903:INFO: - Train segmentation accuracy: 0.7651
+2022-01-30 19:15:47,933:INFO: - Eval metrics: loss: 1.122 ; accuracy: 0.800
+2022-01-30 19:15:47,971:INFO: - Eval segmentation accuracy: 0.6070
+2022-01-30 19:15:48,003:INFO: - Eval metrics: loss: 1.176 ; accuracy: 0.800
+2022-01-30 19:15:48,041:INFO: - Test segmentation accuracy: 0.6672
+2022-01-30 19:15:48,041:INFO: Epoch 116/200
+2022-01-30 19:15:48,176:INFO: - Train metrics: loss: 0.715 ; accuracy: 1.000
+2022-01-30 19:15:48,241:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:48,331:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:48,438:INFO: - Train segmentation accuracy: 0.7671
+2022-01-30 19:15:48,468:INFO: - Eval metrics: loss: 1.101 ; accuracy: 0.800
+2022-01-30 19:15:48,507:INFO: - Eval segmentation accuracy: 0.5991
+2022-01-30 19:15:48,539:INFO: - Eval metrics: loss: 1.168 ; accuracy: 0.800
+2022-01-30 19:15:48,578:INFO: - Test segmentation accuracy: 0.6653
+2022-01-30 19:15:48,579:INFO: Epoch 117/200
+2022-01-30 19:15:48,709:INFO: - Train metrics: loss: 0.709 ; accuracy: 1.000
+2022-01-30 19:15:48,774:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:48,868:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:48,994:INFO: - Train segmentation accuracy: 0.7516
+2022-01-30 19:15:49,024:INFO: - Eval metrics: loss: 1.114 ; accuracy: 0.800
+2022-01-30 19:15:49,067:INFO: - Eval segmentation accuracy: 0.5935
+2022-01-30 19:15:49,096:INFO: - Eval metrics: loss: 1.155 ; accuracy: 0.800
+2022-01-30 19:15:49,137:INFO: - Test segmentation accuracy: 0.6635
+2022-01-30 19:15:49,137:INFO: Epoch 118/200
+2022-01-30 19:15:49,290:INFO: - Train metrics: loss: 0.701 ; accuracy: 1.000
+2022-01-30 19:15:49,355:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:49,447:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:49,555:INFO: - Train segmentation accuracy: 0.7620
+2022-01-30 19:15:49,586:INFO: - Eval metrics: loss: 1.129 ; accuracy: 0.800
+2022-01-30 19:15:49,627:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:15:49,660:INFO: - Eval metrics: loss: 1.146 ; accuracy: 0.800
+2022-01-30 19:15:49,700:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:49,701:INFO: Epoch 119/200
+2022-01-30 19:15:49,839:INFO: - Train metrics: loss: 0.694 ; accuracy: 1.000
+2022-01-30 19:15:49,903:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:49,997:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:50,102:INFO: - Train segmentation accuracy: 0.7591
+2022-01-30 19:15:50,132:INFO: - Eval metrics: loss: 1.134 ; accuracy: 0.800
+2022-01-30 19:15:50,169:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:15:50,200:INFO: - Eval metrics: loss: 1.143 ; accuracy: 0.800
+2022-01-30 19:15:50,239:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:50,240:INFO: Epoch 120/200
+2022-01-30 19:15:50,377:INFO: - Train metrics: loss: 0.687 ; accuracy: 1.000
+2022-01-30 19:15:50,444:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:50,538:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:50,648:INFO: - Train segmentation accuracy: 0.7493
+2022-01-30 19:15:50,678:INFO: - Eval metrics: loss: 1.135 ; accuracy: 0.800
+2022-01-30 19:15:50,714:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:15:50,743:INFO: - Eval metrics: loss: 1.139 ; accuracy: 0.800
+2022-01-30 19:15:50,782:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:50,783:INFO: Epoch 121/200
+2022-01-30 19:15:50,916:INFO: - Train metrics: loss: 0.680 ; accuracy: 1.000
+2022-01-30 19:15:50,982:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:51,082:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:51,185:INFO: - Train segmentation accuracy: 0.7618
+2022-01-30 19:15:51,216:INFO: - Eval metrics: loss: 1.134 ; accuracy: 0.800
+2022-01-30 19:15:51,255:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:15:51,287:INFO: - Eval metrics: loss: 1.136 ; accuracy: 0.800
+2022-01-30 19:15:51,332:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:51,333:INFO: Epoch 122/200
+2022-01-30 19:15:51,460:INFO: - Train metrics: loss: 0.672 ; accuracy: 1.000
+2022-01-30 19:15:51,526:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:51,622:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:51,729:INFO: - Train segmentation accuracy: 0.7458
+2022-01-30 19:15:51,760:INFO: - Eval metrics: loss: 1.129 ; accuracy: 0.800
+2022-01-30 19:15:51,799:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:15:51,830:INFO: - Eval metrics: loss: 1.134 ; accuracy: 0.800
+2022-01-30 19:15:51,867:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:51,867:INFO: Epoch 123/200
+2022-01-30 19:15:51,997:INFO: - Train metrics: loss: 0.666 ; accuracy: 1.000
+2022-01-30 19:15:52,063:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:52,155:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:52,261:INFO: - Train segmentation accuracy: 0.7494
+2022-01-30 19:15:52,293:INFO: - Eval metrics: loss: 1.126 ; accuracy: 0.800
+2022-01-30 19:15:52,331:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:15:52,363:INFO: - Eval metrics: loss: 1.133 ; accuracy: 0.800
+2022-01-30 19:15:52,401:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:52,401:INFO: Epoch 124/200
+2022-01-30 19:15:52,532:INFO: - Train metrics: loss: 0.659 ; accuracy: 1.000
+2022-01-30 19:15:52,598:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:52,689:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:52,796:INFO: - Train segmentation accuracy: 0.7470
+2022-01-30 19:15:52,827:INFO: - Eval metrics: loss: 1.127 ; accuracy: 0.800
+2022-01-30 19:15:52,866:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:15:52,896:INFO: - Eval metrics: loss: 1.130 ; accuracy: 0.800
+2022-01-30 19:15:52,933:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:52,934:INFO: Epoch 125/200
+2022-01-30 19:15:53,063:INFO: - Train metrics: loss: 0.652 ; accuracy: 1.000
+2022-01-30 19:15:53,127:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:53,224:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:53,327:INFO: - Train segmentation accuracy: 0.7491
+2022-01-30 19:15:53,356:INFO: - Eval metrics: loss: 1.127 ; accuracy: 0.800
+2022-01-30 19:15:53,393:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:15:53,423:INFO: - Eval metrics: loss: 1.122 ; accuracy: 0.800
+2022-01-30 19:15:53,463:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:53,464:INFO: Epoch 126/200
+2022-01-30 19:15:53,594:INFO: - Train metrics: loss: 0.644 ; accuracy: 1.000
+2022-01-30 19:15:53,658:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:53,754:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:53,864:INFO: - Train segmentation accuracy: 0.7587
+2022-01-30 19:15:53,896:INFO: - Eval metrics: loss: 1.122 ; accuracy: 0.800
+2022-01-30 19:15:53,934:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:15:53,967:INFO: - Eval metrics: loss: 1.112 ; accuracy: 0.800
+2022-01-30 19:15:54,008:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:54,009:INFO: Epoch 127/200
+2022-01-30 19:15:54,145:INFO: - Train metrics: loss: 0.638 ; accuracy: 1.000
+2022-01-30 19:15:54,213:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:54,307:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:54,414:INFO: - Train segmentation accuracy: 0.7487
+2022-01-30 19:15:54,447:INFO: - Eval metrics: loss: 1.117 ; accuracy: 0.800
+2022-01-30 19:15:54,486:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:15:54,518:INFO: - Eval metrics: loss: 1.107 ; accuracy: 0.800
+2022-01-30 19:15:54,558:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:54,559:INFO: Epoch 128/200
+2022-01-30 19:15:54,688:INFO: - Train metrics: loss: 0.631 ; accuracy: 1.000
+2022-01-30 19:15:54,757:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:54,856:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:54,964:INFO: - Train segmentation accuracy: 0.7549
+2022-01-30 19:15:54,992:INFO: - Eval metrics: loss: 1.111 ; accuracy: 0.800
+2022-01-30 19:15:55,030:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:15:55,058:INFO: - Eval metrics: loss: 1.103 ; accuracy: 0.800
+2022-01-30 19:15:55,097:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:55,097:INFO: Epoch 129/200
+2022-01-30 19:15:55,227:INFO: - Train metrics: loss: 0.625 ; accuracy: 1.000
+2022-01-30 19:15:55,292:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:55,386:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:55,493:INFO: - Train segmentation accuracy: 0.7487
+2022-01-30 19:15:55,523:INFO: - Eval metrics: loss: 1.105 ; accuracy: 0.800
+2022-01-30 19:15:55,561:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:15:55,594:INFO: - Eval metrics: loss: 1.099 ; accuracy: 0.800
+2022-01-30 19:15:55,631:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:55,632:INFO: Epoch 130/200
+2022-01-30 19:15:55,763:INFO: - Train metrics: loss: 0.618 ; accuracy: 1.000
+2022-01-30 19:15:55,826:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:55,919:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:56,025:INFO: - Train segmentation accuracy: 0.7539
+2022-01-30 19:15:56,054:INFO: - Eval metrics: loss: 1.099 ; accuracy: 0.800
+2022-01-30 19:15:56,093:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:15:56,122:INFO: - Eval metrics: loss: 1.097 ; accuracy: 0.800
+2022-01-30 19:15:56,159:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:56,159:INFO: Epoch 131/200
+2022-01-30 19:15:56,288:INFO: - Train metrics: loss: 0.611 ; accuracy: 1.000
+2022-01-30 19:15:56,354:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:56,448:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:56,557:INFO: - Train segmentation accuracy: 0.7504
+2022-01-30 19:15:56,586:INFO: - Eval metrics: loss: 1.099 ; accuracy: 0.800
+2022-01-30 19:15:56,624:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:15:56,651:INFO: - Eval metrics: loss: 1.098 ; accuracy: 0.800
+2022-01-30 19:15:56,690:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:56,690:INFO: Epoch 132/200
+2022-01-30 19:15:56,823:INFO: - Train metrics: loss: 0.605 ; accuracy: 1.000
+2022-01-30 19:15:56,889:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:56,983:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:57,088:INFO: - Train segmentation accuracy: 0.7497
+2022-01-30 19:15:57,119:INFO: - Eval metrics: loss: 1.098 ; accuracy: 0.800
+2022-01-30 19:15:57,159:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:15:57,189:INFO: - Eval metrics: loss: 1.099 ; accuracy: 0.800
+2022-01-30 19:15:57,228:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:57,229:INFO: Epoch 133/200
+2022-01-30 19:15:57,359:INFO: - Train metrics: loss: 0.598 ; accuracy: 1.000
+2022-01-30 19:15:57,423:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:57,518:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:57,625:INFO: - Train segmentation accuracy: 0.7438
+2022-01-30 19:15:57,656:INFO: - Eval metrics: loss: 1.098 ; accuracy: 0.800
+2022-01-30 19:15:57,697:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:15:57,729:INFO: - Eval metrics: loss: 1.093 ; accuracy: 0.800
+2022-01-30 19:15:57,766:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:57,767:INFO: Epoch 134/200
+2022-01-30 19:15:57,899:INFO: - Train metrics: loss: 0.592 ; accuracy: 1.000
+2022-01-30 19:15:57,963:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:58,055:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:58,160:INFO: - Train segmentation accuracy: 0.7382
+2022-01-30 19:15:58,191:INFO: - Eval metrics: loss: 1.089 ; accuracy: 0.800
+2022-01-30 19:15:58,228:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:15:58,257:INFO: - Eval metrics: loss: 1.083 ; accuracy: 0.800
+2022-01-30 19:15:58,295:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:58,296:INFO: Epoch 135/200
+2022-01-30 19:15:58,425:INFO: - Train metrics: loss: 0.586 ; accuracy: 1.000
+2022-01-30 19:15:58,490:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:58,582:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:58,690:INFO: - Train segmentation accuracy: 0.7513
+2022-01-30 19:15:58,721:INFO: - Eval metrics: loss: 1.079 ; accuracy: 0.800
+2022-01-30 19:15:58,761:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:15:58,789:INFO: - Eval metrics: loss: 1.075 ; accuracy: 0.800
+2022-01-30 19:15:58,828:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:58,828:INFO: Epoch 136/200
+2022-01-30 19:15:58,957:INFO: - Train metrics: loss: 0.580 ; accuracy: 1.000
+2022-01-30 19:15:59,023:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:59,117:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:59,228:INFO: - Train segmentation accuracy: 0.7473
+2022-01-30 19:15:59,261:INFO: - Eval metrics: loss: 1.074 ; accuracy: 0.800
+2022-01-30 19:15:59,300:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:15:59,331:INFO: - Eval metrics: loss: 1.071 ; accuracy: 0.800
+2022-01-30 19:15:59,369:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:59,370:INFO: Epoch 137/200
+2022-01-30 19:15:59,502:INFO: - Train metrics: loss: 0.573 ; accuracy: 1.000
+2022-01-30 19:15:59,570:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:15:59,661:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:15:59,767:INFO: - Train segmentation accuracy: 0.7568
+2022-01-30 19:15:59,799:INFO: - Eval metrics: loss: 1.069 ; accuracy: 0.800
+2022-01-30 19:15:59,839:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:15:59,867:INFO: - Eval metrics: loss: 1.066 ; accuracy: 0.800
+2022-01-30 19:15:59,909:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:15:59,910:INFO: Epoch 138/200
+2022-01-30 19:16:00,040:INFO: - Train metrics: loss: 0.567 ; accuracy: 1.000
+2022-01-30 19:16:00,105:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:16:00,197:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:16:00,304:INFO: - Train segmentation accuracy: 0.7465
+2022-01-30 19:16:00,332:INFO: - Eval metrics: loss: 1.066 ; accuracy: 0.800
+2022-01-30 19:16:00,372:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:16:00,400:INFO: - Eval metrics: loss: 1.058 ; accuracy: 0.800
+2022-01-30 19:16:00,441:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:16:00,442:INFO: Epoch 139/200
+2022-01-30 19:16:00,569:INFO: - Train metrics: loss: 0.561 ; accuracy: 1.000
+2022-01-30 19:16:00,643:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:16:00,739:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:16:00,849:INFO: - Train segmentation accuracy: 0.7561
+2022-01-30 19:16:00,876:INFO: - Eval metrics: loss: 1.063 ; accuracy: 0.800
+2022-01-30 19:16:00,915:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:16:00,946:INFO: - Eval metrics: loss: 1.050 ; accuracy: 0.800
+2022-01-30 19:16:00,983:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:16:00,983:INFO: Epoch 140/200
+2022-01-30 19:16:01,122:INFO: - Train metrics: loss: 0.556 ; accuracy: 1.000
+2022-01-30 19:16:01,197:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:16:01,293:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:16:01,394:INFO: - Train segmentation accuracy: 0.7500
+2022-01-30 19:16:01,425:INFO: - Eval metrics: loss: 1.063 ; accuracy: 0.800
+2022-01-30 19:16:01,462:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:16:01,492:INFO: - Eval metrics: loss: 1.044 ; accuracy: 0.800
+2022-01-30 19:16:01,530:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:16:01,531:INFO: Epoch 141/200
+2022-01-30 19:16:01,658:INFO: - Train metrics: loss: 0.550 ; accuracy: 1.000
+2022-01-30 19:16:01,724:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:16:01,819:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:16:01,927:INFO: - Train segmentation accuracy: 0.7482
+2022-01-30 19:16:01,961:INFO: - Eval metrics: loss: 1.056 ; accuracy: 0.800
+2022-01-30 19:16:01,997:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:16:02,028:INFO: - Eval metrics: loss: 1.037 ; accuracy: 0.800
+2022-01-30 19:16:02,066:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:16:02,066:INFO: Epoch 142/200
+2022-01-30 19:16:02,194:INFO: - Train metrics: loss: 0.545 ; accuracy: 1.000
+2022-01-30 19:16:02,259:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:16:02,351:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:16:02,471:INFO: - Train segmentation accuracy: 0.7565
+2022-01-30 19:16:02,506:INFO: - Eval metrics: loss: 1.047 ; accuracy: 0.800
+2022-01-30 19:16:02,548:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:16:02,579:INFO: - Eval metrics: loss: 1.034 ; accuracy: 0.800
+2022-01-30 19:16:02,616:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:16:02,617:INFO: Epoch 143/200
+2022-01-30 19:16:02,752:INFO: - Train metrics: loss: 0.539 ; accuracy: 1.000
+2022-01-30 19:16:02,822:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:16:02,918:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:16:03,032:INFO: - Train segmentation accuracy: 0.7467
+2022-01-30 19:16:03,063:INFO: - Eval metrics: loss: 1.032 ; accuracy: 0.800
+2022-01-30 19:16:03,101:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:16:03,128:INFO: - Eval metrics: loss: 1.032 ; accuracy: 0.800
+2022-01-30 19:16:03,168:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:16:03,169:INFO: Epoch 144/200
+2022-01-30 19:16:03,299:INFO: - Train metrics: loss: 0.534 ; accuracy: 1.000
+2022-01-30 19:16:03,367:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:16:03,463:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:16:03,577:INFO: - Train segmentation accuracy: 0.7506
+2022-01-30 19:16:03,605:INFO: - Eval metrics: loss: 1.023 ; accuracy: 0.800
+2022-01-30 19:16:03,644:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:16:03,674:INFO: - Eval metrics: loss: 1.034 ; accuracy: 0.800
+2022-01-30 19:16:03,715:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:16:03,715:INFO: Epoch 145/200
+2022-01-30 19:16:03,859:INFO: - Train metrics: loss: 0.529 ; accuracy: 1.000
+2022-01-30 19:16:03,926:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:16:04,020:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:16:04,135:INFO: - Train segmentation accuracy: 0.7572
+2022-01-30 19:16:04,164:INFO: - Eval metrics: loss: 1.019 ; accuracy: 0.800
+2022-01-30 19:16:04,203:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:16:04,230:INFO: - Eval metrics: loss: 1.030 ; accuracy: 0.800
+2022-01-30 19:16:04,272:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:16:04,272:INFO: Epoch 146/200
+2022-01-30 19:16:04,404:INFO: - Train metrics: loss: 0.524 ; accuracy: 1.000
+2022-01-30 19:16:04,475:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:16:04,570:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:16:04,681:INFO: - Train segmentation accuracy: 0.7478
+2022-01-30 19:16:04,715:INFO: - Eval metrics: loss: 1.018 ; accuracy: 0.800
+2022-01-30 19:16:04,754:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:16:04,786:INFO: - Eval metrics: loss: 1.025 ; accuracy: 0.800
+2022-01-30 19:16:04,823:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:16:04,823:INFO: Epoch 147/200
+2022-01-30 19:16:04,952:INFO: - Train metrics: loss: 0.518 ; accuracy: 1.000
+2022-01-30 19:16:05,023:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:16:05,115:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:16:05,229:INFO: - Train segmentation accuracy: 0.7446
+2022-01-30 19:16:05,260:INFO: - Eval metrics: loss: 1.016 ; accuracy: 0.800
+2022-01-30 19:16:05,301:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:16:05,327:INFO: - Eval metrics: loss: 1.018 ; accuracy: 0.800
+2022-01-30 19:16:05,368:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:16:05,369:INFO: Epoch 148/200
+2022-01-30 19:16:05,503:INFO: - Train metrics: loss: 0.513 ; accuracy: 1.000
+2022-01-30 19:16:05,577:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:16:05,671:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:16:05,779:INFO: - Train segmentation accuracy: 0.7516
+2022-01-30 19:16:05,808:INFO: - Eval metrics: loss: 1.011 ; accuracy: 0.800
+2022-01-30 19:16:05,847:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:16:05,879:INFO: - Eval metrics: loss: 1.013 ; accuracy: 0.800
+2022-01-30 19:16:05,918:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:16:05,918:INFO: Epoch 149/200
+2022-01-30 19:16:06,051:INFO: - Train metrics: loss: 0.508 ; accuracy: 1.000
+2022-01-30 19:16:06,118:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:16:06,222:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:16:06,333:INFO: - Train segmentation accuracy: 0.7442
+2022-01-30 19:16:06,361:INFO: - Eval metrics: loss: 1.006 ; accuracy: 0.800
+2022-01-30 19:16:06,399:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:16:06,427:INFO: - Eval metrics: loss: 1.013 ; accuracy: 0.800
+2022-01-30 19:16:06,467:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:16:06,467:INFO: Epoch 150/200
+2022-01-30 19:16:06,597:INFO: - Train metrics: loss: 0.503 ; accuracy: 1.000
+2022-01-30 19:16:06,673:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:16:06,766:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:16:06,876:INFO: - Train segmentation accuracy: 0.7564
+2022-01-30 19:16:06,907:INFO: - Eval metrics: loss: 1.003 ; accuracy: 0.800
+2022-01-30 19:16:06,948:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:16:06,977:INFO: - Eval metrics: loss: 1.016 ; accuracy: 0.800
+2022-01-30 19:16:07,016:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:16:07,017:INFO: Epoch 151/200
+2022-01-30 19:16:07,148:INFO: - Train metrics: loss: 0.499 ; accuracy: 1.000
+2022-01-30 19:16:07,216:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:16:07,312:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:16:07,424:INFO: - Train segmentation accuracy: 0.7567
+2022-01-30 19:16:07,457:INFO: - Eval metrics: loss: 0.997 ; accuracy: 0.800
+2022-01-30 19:16:07,498:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:16:07,528:INFO: - Eval metrics: loss: 1.017 ; accuracy: 0.800
+2022-01-30 19:16:07,568:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:16:07,569:INFO: Epoch 152/200
+2022-01-30 19:16:07,704:INFO: - Train metrics: loss: 0.495 ; accuracy: 1.000
+2022-01-30 19:16:07,775:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:16:07,867:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:16:07,977:INFO: - Train segmentation accuracy: 0.7487
+2022-01-30 19:16:08,010:INFO: - Eval metrics: loss: 0.987 ; accuracy: 0.800
+2022-01-30 19:16:08,048:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:16:08,076:INFO: - Eval metrics: loss: 1.002 ; accuracy: 0.800
+2022-01-30 19:16:08,117:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:16:08,118:INFO: Epoch 153/200
+2022-01-30 19:16:08,248:INFO: - Train metrics: loss: 0.490 ; accuracy: 1.000
+2022-01-30 19:16:08,315:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:16:08,409:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:16:08,515:INFO: - Train segmentation accuracy: 0.7571
+2022-01-30 19:16:08,548:INFO: - Eval metrics: loss: 0.989 ; accuracy: 0.800
+2022-01-30 19:16:08,588:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:16:08,616:INFO: - Eval metrics: loss: 1.001 ; accuracy: 0.800
+2022-01-30 19:16:08,657:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:16:08,657:INFO: Epoch 154/200
+2022-01-30 19:16:08,785:INFO: - Train metrics: loss: 0.485 ; accuracy: 1.000
+2022-01-30 19:16:08,848:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:16:08,942:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:16:09,047:INFO: - Train segmentation accuracy: 0.7526
+2022-01-30 19:16:09,077:INFO: - Eval metrics: loss: 0.995 ; accuracy: 0.800
+2022-01-30 19:16:09,114:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:16:09,142:INFO: - Eval metrics: loss: 1.006 ; accuracy: 0.800
+2022-01-30 19:16:09,182:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:16:09,182:INFO: Epoch 155/200
+2022-01-30 19:16:09,315:INFO: - Train metrics: loss: 0.481 ; accuracy: 1.000
+2022-01-30 19:16:09,385:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:16:09,485:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:16:09,590:INFO: - Train segmentation accuracy: 0.7558
+2022-01-30 19:16:09,620:INFO: - Eval metrics: loss: 0.996 ; accuracy: 0.800
+2022-01-30 19:16:09,657:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:16:09,687:INFO: - Eval metrics: loss: 1.002 ; accuracy: 0.800
+2022-01-30 19:16:09,724:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:16:09,725:INFO: Epoch 156/200
+2022-01-30 19:16:09,857:INFO: - Train metrics: loss: 0.476 ; accuracy: 1.000
+2022-01-30 19:16:09,926:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:16:10,023:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:16:10,130:INFO: - Train segmentation accuracy: 0.7530
+2022-01-30 19:16:10,163:INFO: - Eval metrics: loss: 0.990 ; accuracy: 0.800
+2022-01-30 19:16:10,203:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:16:10,233:INFO: - Eval metrics: loss: 0.991 ; accuracy: 0.800
+2022-01-30 19:16:10,273:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:16:10,273:INFO: Epoch 157/200
+2022-01-30 19:16:10,403:INFO: - Train metrics: loss: 0.472 ; accuracy: 1.000
+2022-01-30 19:16:10,468:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:16:10,565:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:16:10,672:INFO: - Train segmentation accuracy: 0.7462
+2022-01-30 19:16:10,706:INFO: - Eval metrics: loss: 0.987 ; accuracy: 0.800
+2022-01-30 19:16:10,745:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:16:10,774:INFO: - Eval metrics: loss: 0.991 ; accuracy: 0.800
+2022-01-30 19:16:10,811:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:16:10,812:INFO: Epoch 158/200
+2022-01-30 19:16:10,940:INFO: - Train metrics: loss: 0.469 ; accuracy: 1.000
+2022-01-30 19:16:11,004:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:16:11,099:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:16:11,207:INFO: - Train segmentation accuracy: 0.7504
+2022-01-30 19:16:11,236:INFO: - Eval metrics: loss: 0.977 ; accuracy: 0.800
+2022-01-30 19:16:11,274:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:16:11,303:INFO: - Eval metrics: loss: 0.994 ; accuracy: 0.800
+2022-01-30 19:16:11,340:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:16:11,341:INFO: Epoch 159/200
+2022-01-30 19:16:11,470:INFO: - Train metrics: loss: 0.476 ; accuracy: 1.000
+2022-01-30 19:16:11,537:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:16:11,632:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:16:11,738:INFO: - Train segmentation accuracy: 0.7504
+2022-01-30 19:16:11,771:INFO: - Eval metrics: loss: 1.076 ; accuracy: 0.800
+2022-01-30 19:16:11,808:INFO: - Eval segmentation accuracy: 0.5713
+2022-01-30 19:16:11,840:INFO: - Eval metrics: loss: 0.954 ; accuracy: 0.800
+2022-01-30 19:16:11,877:INFO: - Test segmentation accuracy: 0.6661
+2022-01-30 19:16:11,878:INFO: Epoch 160/200
+2022-01-30 19:16:12,007:INFO: - Train metrics: loss: 0.472 ; accuracy: 1.000
+2022-01-30 19:16:12,075:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:16:12,171:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:16:12,279:INFO: - Train segmentation accuracy: 0.7410
+2022-01-30 19:16:12,310:INFO: - Eval metrics: loss: 1.379 ; accuracy: 0.800
+2022-01-30 19:16:12,353:INFO: - Eval segmentation accuracy: 0.4796
+2022-01-30 19:16:12,384:INFO: - Eval metrics: loss: 1.055 ; accuracy: 0.800
+2022-01-30 19:16:12,420:INFO: - Test segmentation accuracy: 0.6293
+2022-01-30 19:16:12,420:INFO: Epoch 161/200
+2022-01-30 19:16:12,557:INFO: - Train metrics: loss: 0.503 ; accuracy: 1.000
+2022-01-30 19:16:12,625:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:16:12,717:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:16:12,828:INFO: - Train segmentation accuracy: 0.7757
+2022-01-30 19:16:12,859:INFO: - Eval metrics: loss: 34.398 ; accuracy: 0.200
+2022-01-30 19:16:12,901:INFO: - Eval segmentation accuracy: 0.4946
+2022-01-30 19:16:12,929:INFO: - Eval metrics: loss: 28.164 ; accuracy: 0.200
+2022-01-30 19:16:12,965:INFO: - Test segmentation accuracy: 0.4299
+2022-01-30 19:16:12,965:INFO: Epoch 162/200
+2022-01-30 19:16:13,097:INFO: - Train metrics: loss: 0.617 ; accuracy: 1.000
+2022-01-30 19:16:13,165:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:16:13,263:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:16:13,376:INFO: - Train segmentation accuracy: 0.7738
+2022-01-30 19:16:13,408:INFO: - Eval metrics: loss: 35.074 ; accuracy: 0.200
+2022-01-30 19:16:13,449:INFO: - Eval segmentation accuracy: 0.4289
+2022-01-30 19:16:13,499:INFO: - Eval metrics: loss: 29.963 ; accuracy: 0.200
+2022-01-30 19:16:13,550:INFO: - Test segmentation accuracy: 0.3957
+2022-01-30 19:16:13,550:INFO: Epoch 163/200
+2022-01-30 19:16:13,713:INFO: - Train metrics: loss: 0.506 ; accuracy: 1.000
+2022-01-30 19:16:13,785:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:16:13,879:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:16:13,988:INFO: - Train segmentation accuracy: 0.7613
+2022-01-30 19:16:14,021:INFO: - Eval metrics: loss: 35.078 ; accuracy: 0.200
+2022-01-30 19:16:14,060:INFO: - Eval segmentation accuracy: 0.4121
+2022-01-30 19:16:14,092:INFO: - Eval metrics: loss: 28.551 ; accuracy: 0.200
+2022-01-30 19:16:14,136:INFO: - Test segmentation accuracy: 0.3917
+2022-01-30 19:16:14,137:INFO: Epoch 164/200
+2022-01-30 19:16:14,268:INFO: - Train metrics: loss: 0.490 ; accuracy: 1.000
+2022-01-30 19:16:14,342:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:16:14,436:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:16:14,541:INFO: - Train segmentation accuracy: 0.7594
+2022-01-30 19:16:14,575:INFO: - Eval metrics: loss: 35.083 ; accuracy: 0.200
+2022-01-30 19:16:14,623:INFO: - Eval segmentation accuracy: 0.4152
+2022-01-30 19:16:14,656:INFO: - Eval metrics: loss: 28.236 ; accuracy: 0.200
+2022-01-30 19:16:14,696:INFO: - Test segmentation accuracy: 0.4076
+2022-01-30 19:16:14,697:INFO: Epoch 165/200
+2022-01-30 19:16:14,829:INFO: - Train metrics: loss: 0.489 ; accuracy: 1.000
+2022-01-30 19:16:14,893:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:16:14,996:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:16:15,111:INFO: - Train segmentation accuracy: 0.7517
+2022-01-30 19:16:15,141:INFO: - Eval metrics: loss: 35.089 ; accuracy: 0.200
+2022-01-30 19:16:15,184:INFO: - Eval segmentation accuracy: 0.4332
+2022-01-30 19:16:15,208:INFO: - Eval metrics: loss: 27.725 ; accuracy: 0.200
+2022-01-30 19:16:15,247:INFO: - Test segmentation accuracy: 0.4325
+2022-01-30 19:16:15,248:INFO: Epoch 166/200
+2022-01-30 19:16:15,384:INFO: - Train metrics: loss: 0.494 ; accuracy: 1.000
+2022-01-30 19:16:15,456:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:16:15,552:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:16:15,663:INFO: - Train segmentation accuracy: 0.7439
+2022-01-30 19:16:15,692:INFO: - Eval metrics: loss: 35.095 ; accuracy: 0.200
+2022-01-30 19:16:15,730:INFO: - Eval segmentation accuracy: 0.4609
+2022-01-30 19:16:15,758:INFO: - Eval metrics: loss: 27.084 ; accuracy: 0.200
+2022-01-30 19:16:15,798:INFO: - Test segmentation accuracy: 0.4547
+2022-01-30 19:16:15,799:INFO: Epoch 167/200
+2022-01-30 19:16:15,936:INFO: - Train metrics: loss: 0.499 ; accuracy: 1.000
+2022-01-30 19:16:16,005:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:16:16,105:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:16:16,212:INFO: - Train segmentation accuracy: 0.7526
+2022-01-30 19:16:16,241:INFO: - Eval metrics: loss: 21.983 ; accuracy: 0.200
+2022-01-30 19:16:16,280:INFO: - Eval segmentation accuracy: 0.4951
+2022-01-30 19:16:16,308:INFO: - Eval metrics: loss: 26.686 ; accuracy: 0.400
+2022-01-30 19:16:16,346:INFO: - Test segmentation accuracy: 0.4929
+2022-01-30 19:16:16,346:INFO: Epoch 168/200
+2022-01-30 19:16:16,485:INFO: - Train metrics: loss: 0.502 ; accuracy: 1.000
+2022-01-30 19:16:16,551:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:16:16,642:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:16:16,761:INFO: - Train segmentation accuracy: 0.7636
+2022-01-30 19:16:16,792:INFO: - Eval metrics: loss: 12.690 ; accuracy: 0.600
+2022-01-30 19:16:16,830:INFO: - Eval segmentation accuracy: 0.5713
+2022-01-30 19:16:16,856:INFO: - Eval metrics: loss: 16.444 ; accuracy: 0.400
+2022-01-30 19:16:16,895:INFO: - Test segmentation accuracy: 0.5596
+2022-01-30 19:16:16,895:INFO: Epoch 169/200
+2022-01-30 19:16:17,035:INFO: - Train metrics: loss: 0.505 ; accuracy: 1.000
+2022-01-30 19:16:17,103:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:16:17,199:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:16:17,306:INFO: - Train segmentation accuracy: 0.7632
+2022-01-30 19:16:17,336:INFO: - Eval metrics: loss: 9.394 ; accuracy: 0.800
+2022-01-30 19:16:17,378:INFO: - Eval segmentation accuracy: 0.6174
+2022-01-30 19:16:17,405:INFO: - Eval metrics: loss: 9.479 ; accuracy: 0.800
+2022-01-30 19:16:17,444:INFO: - Test segmentation accuracy: 0.6233
+2022-01-30 19:16:17,445:INFO: Epoch 170/200
+2022-01-30 19:16:17,583:INFO: - Train metrics: loss: 0.507 ; accuracy: 1.000
+2022-01-30 19:16:17,649:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:16:17,739:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:16:17,845:INFO: - Train segmentation accuracy: 0.7375
+2022-01-30 19:16:17,874:INFO: - Eval metrics: loss: 9.244 ; accuracy: 0.800
+2022-01-30 19:16:17,911:INFO: - Eval segmentation accuracy: 0.6267
+2022-01-30 19:16:17,942:INFO: - Eval metrics: loss: 9.621 ; accuracy: 0.600
+2022-01-30 19:16:17,979:INFO: - Test segmentation accuracy: 0.6607
+2022-01-30 19:16:17,980:INFO: Epoch 171/200
+2022-01-30 19:16:18,109:INFO: - Train metrics: loss: 0.508 ; accuracy: 1.000
+2022-01-30 19:16:18,173:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:16:18,266:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:16:18,373:INFO: - Train segmentation accuracy: 0.7572
+2022-01-30 19:16:18,404:INFO: - Eval metrics: loss: 4.993 ; accuracy: 0.800
+2022-01-30 19:16:18,441:INFO: - Eval segmentation accuracy: 0.6419
+2022-01-30 19:16:18,472:INFO: - Eval metrics: loss: 6.117 ; accuracy: 0.600
+2022-01-30 19:16:18,508:INFO: - Test segmentation accuracy: 0.6728
+2022-01-30 19:16:18,509:INFO: Epoch 172/200
+2022-01-30 19:16:18,635:INFO: - Train metrics: loss: 0.510 ; accuracy: 1.000
+2022-01-30 19:16:18,700:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:16:18,792:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:16:18,900:INFO: - Train segmentation accuracy: 0.7562
+2022-01-30 19:16:18,928:INFO: - Eval metrics: loss: 1.060 ; accuracy: 0.800
+2022-01-30 19:16:18,970:INFO: - Eval segmentation accuracy: 0.6309
+2022-01-30 19:16:19,004:INFO: - Eval metrics: loss: 1.707 ; accuracy: 0.600
+2022-01-30 19:16:19,046:INFO: - Test segmentation accuracy: 0.6733
+2022-01-30 19:16:19,047:INFO: Epoch 173/200
+2022-01-30 19:16:19,179:INFO: - Train metrics: loss: 0.507 ; accuracy: 1.000
+2022-01-30 19:16:19,248:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:16:19,341:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:16:19,456:INFO: - Train segmentation accuracy: 0.7549
+2022-01-30 19:16:19,485:INFO: - Eval metrics: loss: 0.628 ; accuracy: 1.000
+2022-01-30 19:16:19,523:INFO: - Eval segmentation accuracy: 0.5972
+2022-01-30 19:16:19,556:INFO: - Eval metrics: loss: 1.009 ; accuracy: 0.800
+2022-01-30 19:16:19,592:INFO: - Test segmentation accuracy: 0.6622
+2022-01-30 19:16:19,875:INFO: Epoch 174/200
+2022-01-30 19:16:20,001:INFO: - Train metrics: loss: 0.506 ; accuracy: 1.000
+2022-01-30 19:16:20,068:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:16:20,160:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:16:20,278:INFO: - Train segmentation accuracy: 0.7484
+2022-01-30 19:16:20,309:INFO: - Eval metrics: loss: 1.038 ; accuracy: 0.800
+2022-01-30 19:16:20,346:INFO: - Eval segmentation accuracy: 0.5918
+2022-01-30 19:16:20,376:INFO: - Eval metrics: loss: 1.011 ; accuracy: 0.800
+2022-01-30 19:16:20,414:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:16:20,415:INFO: Epoch 175/200
+2022-01-30 19:16:20,551:INFO: - Train metrics: loss: 0.503 ; accuracy: 1.000
+2022-01-30 19:16:20,619:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:16:20,714:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:16:20,848:INFO: - Train segmentation accuracy: 0.7473
+2022-01-30 19:16:20,882:INFO: - Eval metrics: loss: 1.052 ; accuracy: 0.800
+2022-01-30 19:16:20,927:INFO: - Eval segmentation accuracy: 0.5977
+2022-01-30 19:16:20,979:INFO: - Eval metrics: loss: 1.015 ; accuracy: 0.800
+2022-01-30 19:16:21,037:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:16:21,037:INFO: Epoch 176/200
+2022-01-30 19:16:21,170:INFO: - Train metrics: loss: 0.500 ; accuracy: 1.000
+2022-01-30 19:16:21,242:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:16:21,337:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:16:21,442:INFO: - Train segmentation accuracy: 0.7573
+2022-01-30 19:16:21,475:INFO: - Eval metrics: loss: 1.048 ; accuracy: 0.800
+2022-01-30 19:16:21,516:INFO: - Eval segmentation accuracy: 0.5985
+2022-01-30 19:16:21,545:INFO: - Eval metrics: loss: 1.016 ; accuracy: 0.800
+2022-01-30 19:16:21,584:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:16:21,584:INFO: Epoch 177/200
+2022-01-30 19:16:21,714:INFO: - Train metrics: loss: 0.497 ; accuracy: 1.000
+2022-01-30 19:16:21,781:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:16:21,880:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:16:21,984:INFO: - Train segmentation accuracy: 0.7547
+2022-01-30 19:16:22,011:INFO: - Eval metrics: loss: 1.031 ; accuracy: 0.800
+2022-01-30 19:16:22,048:INFO: - Eval segmentation accuracy: 0.5976
+2022-01-30 19:16:22,077:INFO: - Eval metrics: loss: 1.015 ; accuracy: 0.800
+2022-01-30 19:16:22,114:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:16:22,115:INFO: Epoch 178/200
+2022-01-30 19:16:22,250:INFO: - Train metrics: loss: 0.493 ; accuracy: 1.000
+2022-01-30 19:16:22,318:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:16:22,409:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:16:22,519:INFO: - Train segmentation accuracy: 0.7480
+2022-01-30 19:16:22,551:INFO: - Eval metrics: loss: 1.011 ; accuracy: 0.800
+2022-01-30 19:16:22,593:INFO: - Eval segmentation accuracy: 0.5932
+2022-01-30 19:16:22,620:INFO: - Eval metrics: loss: 1.012 ; accuracy: 0.800
+2022-01-30 19:16:22,660:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:16:22,661:INFO: Epoch 179/200
+2022-01-30 19:16:22,792:INFO: - Train metrics: loss: 0.490 ; accuracy: 1.000
+2022-01-30 19:16:22,862:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:16:22,955:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:16:23,069:INFO: - Train segmentation accuracy: 0.7586
+2022-01-30 19:16:23,097:INFO: - Eval metrics: loss: 0.996 ; accuracy: 0.800
+2022-01-30 19:16:23,135:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:16:23,168:INFO: - Eval metrics: loss: 1.008 ; accuracy: 0.800
+2022-01-30 19:16:23,210:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:16:23,211:INFO: Epoch 180/200
+2022-01-30 19:16:23,342:INFO: - Train metrics: loss: 0.485 ; accuracy: 1.000
+2022-01-30 19:16:23,414:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:16:23,505:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:16:23,608:INFO: - Train segmentation accuracy: 0.7523
+2022-01-30 19:16:23,637:INFO: - Eval metrics: loss: 0.989 ; accuracy: 0.800
+2022-01-30 19:16:23,679:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:16:23,710:INFO: - Eval metrics: loss: 1.006 ; accuracy: 0.800
+2022-01-30 19:16:23,748:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:16:23,749:INFO: Epoch 181/200
+2022-01-30 19:16:23,883:INFO: - Train metrics: loss: 0.479 ; accuracy: 1.000
+2022-01-30 19:16:23,952:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:16:24,046:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:16:24,163:INFO: - Train segmentation accuracy: 0.7564
+2022-01-30 19:16:24,193:INFO: - Eval metrics: loss: 0.982 ; accuracy: 0.800
+2022-01-30 19:16:24,233:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:16:24,267:INFO: - Eval metrics: loss: 1.003 ; accuracy: 0.800
+2022-01-30 19:16:24,308:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:16:24,309:INFO: Epoch 182/200
+2022-01-30 19:16:24,446:INFO: - Train metrics: loss: 0.474 ; accuracy: 1.000
+2022-01-30 19:16:24,517:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:16:24,622:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:16:24,734:INFO: - Train segmentation accuracy: 0.7563
+2022-01-30 19:16:24,767:INFO: - Eval metrics: loss: 0.975 ; accuracy: 0.800
+2022-01-30 19:16:24,809:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:16:24,838:INFO: - Eval metrics: loss: 1.001 ; accuracy: 0.800
+2022-01-30 19:16:24,877:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:16:24,878:INFO: Epoch 183/200
+2022-01-30 19:16:25,147:INFO: - Train metrics: loss: 0.470 ; accuracy: 1.000
+2022-01-30 19:16:25,219:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:16:25,301:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:16:25,392:INFO: - Train segmentation accuracy: 0.7595
+2022-01-30 19:16:25,416:INFO: - Eval metrics: loss: 0.969 ; accuracy: 0.800
+2022-01-30 19:16:25,452:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:16:25,476:INFO: - Eval metrics: loss: 1.001 ; accuracy: 0.800
+2022-01-30 19:16:25,510:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:16:25,510:INFO: Epoch 184/200
+2022-01-30 19:16:25,601:INFO: - Train metrics: loss: 0.465 ; accuracy: 1.000
+2022-01-30 19:16:25,667:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:16:25,748:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:16:25,842:INFO: - Train segmentation accuracy: 0.7578
+2022-01-30 19:16:25,867:INFO: - Eval metrics: loss: 0.966 ; accuracy: 0.800
+2022-01-30 19:16:25,901:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:16:25,924:INFO: - Eval metrics: loss: 1.001 ; accuracy: 0.800
+2022-01-30 19:16:25,956:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:16:25,957:INFO: Epoch 185/200
+2022-01-30 19:16:26,044:INFO: - Train metrics: loss: 0.458 ; accuracy: 1.000
+2022-01-30 19:16:26,113:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:16:26,210:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:16:26,313:INFO: - Train segmentation accuracy: 0.7591
+2022-01-30 19:16:26,341:INFO: - Eval metrics: loss: 0.965 ; accuracy: 0.800
+2022-01-30 19:16:26,374:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:16:26,400:INFO: - Eval metrics: loss: 1.000 ; accuracy: 0.800
+2022-01-30 19:16:26,435:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:16:26,436:INFO: Epoch 186/200
+2022-01-30 19:16:26,530:INFO: - Train metrics: loss: 0.454 ; accuracy: 1.000
+2022-01-30 19:16:26,595:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:16:26,676:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:16:26,768:INFO: - Train segmentation accuracy: 0.7581
+2022-01-30 19:16:26,794:INFO: - Eval metrics: loss: 0.968 ; accuracy: 0.800
+2022-01-30 19:16:26,829:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:16:26,854:INFO: - Eval metrics: loss: 1.002 ; accuracy: 0.800
+2022-01-30 19:16:26,889:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:16:26,890:INFO: Epoch 187/200
+2022-01-30 19:16:27,019:INFO: - Train metrics: loss: 0.447 ; accuracy: 1.000
+2022-01-30 19:16:27,086:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:16:27,181:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:16:27,298:INFO: - Train segmentation accuracy: 0.7542
+2022-01-30 19:16:27,329:INFO: - Eval metrics: loss: 0.973 ; accuracy: 0.800
+2022-01-30 19:16:27,367:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:16:27,395:INFO: - Eval metrics: loss: 1.003 ; accuracy: 0.800
+2022-01-30 19:16:27,433:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:16:27,433:INFO: Epoch 188/200
+2022-01-30 19:16:27,562:INFO: - Train metrics: loss: 0.442 ; accuracy: 1.000
+2022-01-30 19:16:27,628:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:16:27,723:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:16:27,833:INFO: - Train segmentation accuracy: 0.7487
+2022-01-30 19:16:27,864:INFO: - Eval metrics: loss: 0.978 ; accuracy: 0.800
+2022-01-30 19:16:27,902:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:16:27,930:INFO: - Eval metrics: loss: 1.001 ; accuracy: 0.800
+2022-01-30 19:16:27,971:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:16:27,971:INFO: Epoch 189/200
+2022-01-30 19:16:28,095:INFO: - Train metrics: loss: 0.436 ; accuracy: 1.000
+2022-01-30 19:16:28,166:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:16:28,257:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:16:28,360:INFO: - Train segmentation accuracy: 0.7631
+2022-01-30 19:16:28,389:INFO: - Eval metrics: loss: 0.983 ; accuracy: 0.800
+2022-01-30 19:16:28,426:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:16:28,454:INFO: - Eval metrics: loss: 0.998 ; accuracy: 0.800
+2022-01-30 19:16:28,495:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:16:28,496:INFO: Epoch 190/200
+2022-01-30 19:16:28,632:INFO: - Train metrics: loss: 0.431 ; accuracy: 1.000
+2022-01-30 19:16:28,698:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:16:28,795:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:16:28,902:INFO: - Train segmentation accuracy: 0.7651
+2022-01-30 19:16:28,935:INFO: - Eval metrics: loss: 0.986 ; accuracy: 0.800
+2022-01-30 19:16:28,977:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:16:29,009:INFO: - Eval metrics: loss: 0.994 ; accuracy: 0.800
+2022-01-30 19:16:29,052:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:16:29,053:INFO: Epoch 191/200
+2022-01-30 19:16:29,184:INFO: - Train metrics: loss: 0.425 ; accuracy: 1.000
+2022-01-30 19:16:29,256:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:16:29,350:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:16:29,458:INFO: - Train segmentation accuracy: 0.7568
+2022-01-30 19:16:29,490:INFO: - Eval metrics: loss: 0.988 ; accuracy: 0.800
+2022-01-30 19:16:29,529:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:16:29,557:INFO: - Eval metrics: loss: 0.988 ; accuracy: 0.800
+2022-01-30 19:16:29,596:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:16:29,597:INFO: Epoch 192/200
+2022-01-30 19:16:29,729:INFO: - Train metrics: loss: 0.421 ; accuracy: 1.000
+2022-01-30 19:16:29,794:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:16:29,888:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:16:29,998:INFO: - Train segmentation accuracy: 0.7631
+2022-01-30 19:16:30,027:INFO: - Eval metrics: loss: 0.989 ; accuracy: 0.800
+2022-01-30 19:16:30,063:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:16:30,095:INFO: - Eval metrics: loss: 0.984 ; accuracy: 0.800
+2022-01-30 19:16:30,134:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:16:30,135:INFO: Epoch 193/200
+2022-01-30 19:16:30,265:INFO: - Train metrics: loss: 0.416 ; accuracy: 1.000
+2022-01-30 19:16:30,339:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:16:30,436:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:16:30,558:INFO: - Train segmentation accuracy: 0.7497
+2022-01-30 19:16:30,590:INFO: - Eval metrics: loss: 0.988 ; accuracy: 0.800
+2022-01-30 19:16:30,628:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:16:30,661:INFO: - Eval metrics: loss: 0.981 ; accuracy: 0.800
+2022-01-30 19:16:30,701:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:16:30,702:INFO: Epoch 194/200
+2022-01-30 19:16:30,844:INFO: - Train metrics: loss: 0.410 ; accuracy: 1.000
+2022-01-30 19:16:30,910:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:16:31,004:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:16:31,109:INFO: - Train segmentation accuracy: 0.7495
+2022-01-30 19:16:31,140:INFO: - Eval metrics: loss: 0.982 ; accuracy: 0.800
+2022-01-30 19:16:31,180:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:16:31,211:INFO: - Eval metrics: loss: 0.977 ; accuracy: 0.800
+2022-01-30 19:16:31,249:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:16:31,250:INFO: Epoch 195/200
+2022-01-30 19:16:31,378:INFO: - Train metrics: loss: 0.405 ; accuracy: 1.000
+2022-01-30 19:16:31,445:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:16:31,544:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:16:31,652:INFO: - Train segmentation accuracy: 0.7571
+2022-01-30 19:16:31,683:INFO: - Eval metrics: loss: 0.974 ; accuracy: 0.800
+2022-01-30 19:16:31,721:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:16:31,751:INFO: - Eval metrics: loss: 0.971 ; accuracy: 0.800
+2022-01-30 19:16:31,789:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:16:31,789:INFO: Epoch 196/200
+2022-01-30 19:16:31,919:INFO: - Train metrics: loss: 0.401 ; accuracy: 1.000
+2022-01-30 19:16:31,988:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:16:32,091:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:16:32,203:INFO: - Train segmentation accuracy: 0.7510
+2022-01-30 19:16:32,234:INFO: - Eval metrics: loss: 0.966 ; accuracy: 0.800
+2022-01-30 19:16:32,275:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:16:32,305:INFO: - Eval metrics: loss: 0.965 ; accuracy: 0.800
+2022-01-30 19:16:32,345:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:16:32,345:INFO: Epoch 197/200
+2022-01-30 19:16:32,485:INFO: - Train metrics: loss: 0.396 ; accuracy: 1.000
+2022-01-30 19:16:32,553:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:16:32,649:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:16:32,755:INFO: - Train segmentation accuracy: 0.7493
+2022-01-30 19:16:32,786:INFO: - Eval metrics: loss: 0.958 ; accuracy: 0.800
+2022-01-30 19:16:32,822:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:16:32,849:INFO: - Eval metrics: loss: 0.959 ; accuracy: 0.800
+2022-01-30 19:16:32,889:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:16:32,890:INFO: Epoch 198/200
+2022-01-30 19:16:33,026:INFO: - Train metrics: loss: 0.392 ; accuracy: 1.000
+2022-01-30 19:16:33,095:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:16:33,193:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:16:33,304:INFO: - Train segmentation accuracy: 0.7507
+2022-01-30 19:16:33,336:INFO: - Eval metrics: loss: 0.954 ; accuracy: 0.800
+2022-01-30 19:16:33,371:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:16:33,403:INFO: - Eval metrics: loss: 0.955 ; accuracy: 0.800
+2022-01-30 19:16:33,442:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:16:33,443:INFO: Epoch 199/200
+2022-01-30 19:16:33,573:INFO: - Train metrics: loss: 0.387 ; accuracy: 1.000
+2022-01-30 19:16:33,641:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:16:33,731:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:16:33,838:INFO: - Train segmentation accuracy: 0.7555
+2022-01-30 19:16:33,867:INFO: - Eval metrics: loss: 0.953 ; accuracy: 0.800
+2022-01-30 19:16:33,907:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:16:33,935:INFO: - Eval metrics: loss: 0.953 ; accuracy: 0.800
+2022-01-30 19:16:33,977:INFO: - Test segmentation accuracy: 0.6639
+2022-01-30 19:16:33,977:INFO: Epoch 200/200
+2022-01-30 19:16:34,110:INFO: - Train metrics: loss: 0.383 ; accuracy: 1.000
+2022-01-30 19:16:34,177:INFO: - Computing optimal threshold on training set...
+2022-01-30 19:16:34,276:INFO: - Best threshold on train samples: 0.0000, best accuracy: 1.0000
+2022-01-30 19:16:34,393:INFO: - Train segmentation accuracy: 0.7477
+2022-01-30 19:16:34,434:INFO: - Eval metrics: loss: 0.953 ; accuracy: 0.800
+2022-01-30 19:16:34,478:INFO: - Eval segmentation accuracy: 0.5921
+2022-01-30 19:16:34,508:INFO: - Eval metrics: loss: 0.950 ; accuracy: 0.800
+2022-01-30 19:16:34,546:INFO: - Test segmentation accuracy: 0.6639
