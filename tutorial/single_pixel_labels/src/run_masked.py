@@ -64,7 +64,7 @@ dataset_sizes = {}
 dataset_sizes['train'] = len(train_files)
 dataset_sizes['val'] = len(val_files)
 
-device = torch.device("cuda:"+str(args.gpu) if torch.cuda.is_available() else "cpu")
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 model = UNet(in_channels=7, out_channels=1, 
              starting_filters=params['starting_filters'], 
