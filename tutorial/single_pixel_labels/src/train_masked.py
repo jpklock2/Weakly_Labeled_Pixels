@@ -19,7 +19,7 @@ def train_model(model, dataloaders, dataset_sizes, criterion, optimizer, schedul
     """
     t0 = time.time()
     
-    device = torch.device("cuda:"+str(gpu) if torch.cuda.is_available() else "cpu")
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
     best_model_wts = copy.deepcopy(model.state_dict())
     best_acc = 0.0
