@@ -111,7 +111,7 @@ def get_seg_metrics(sess, model_spec, num_steps, params, threshold):
         rec += recall_score(seg_true.flatten(), seg_pred.flatten())
         f1s += f1_score(seg_true.flatten(), seg_pred.flatten())
     
-    return acc / num_steps, pre / num_steps, rec / num_steps, f1s / num_steps
+    return acc / num_steps, pre / num_steps, rec / num_steps, f1s / num_steps, seg_pred
 
 
 def train_sess(sess, model_spec, num_steps, writer, params, model_dir, epoch):
@@ -246,7 +246,7 @@ def train_and_evaluate(train_model_spec, eval_model_spec, test_model_spec, model
                 best_thresh, best_acc = get_best_threshold(sess, train_model_spec, num_steps, params)
                 logging.info('- Best threshold on train samples: {:0.4f}, best accuracy: {:0.4f}'.format(best_thresh, best_acc)) 
 
-                train_segacc, train_segpre, train_segrec, train_segf1s = get_seg_metrics(sess, train_model_spec, num_steps, params, best_thresh)
+                train_segacc, train_segpre, train_segrec, train_segf1s, train_preds = get_seg_metrics(sess, train_model_spec, num_steps, params, best_thresh)
                 train_segacc_list.append(train_segacc)
                 train_segpre_list.append(train_segpre)
                 train_segrec_list.append(train_segrec)
@@ -260,7 +260,7 @@ def train_and_evaluate(train_model_spec, eval_model_spec, test_model_spec, model
             eval_metrics = evaluate_sess(sess, eval_model_spec, num_steps, eval_writer, params, model_dir, epoch)
 
             if params.unet_type == 'gap_sigmoid':
-                eval_segacc, eval_segpre, eval_segrec, eval_segf1s = get_seg_metrics(sess, eval_model_spec, num_steps, params, best_thresh)
+                eval_segacc, eval_segpre, eval_segrec, eval_segf1s, eval_preds = get_seg_metrics(sess, eval_model_spec, num_steps, params, best_thresh)
                 eval_segacc_list.append(eval_segacc)
                 eval_segpre_list.append(eval_segpre)
                 eval_segrec_list.append(eval_segrec)
@@ -274,7 +274,7 @@ def train_and_evaluate(train_model_spec, eval_model_spec, test_model_spec, model
             test_metrics = evaluate_sess(sess, test_model_spec, num_steps, test_writer, params, model_dir, epoch)
 
             if params.unet_type == 'gap_sigmoid':
-                test_segacc, test_segpre, test_segrec, test_segf1s = get_seg_metrics(sess, test_model_spec, num_steps, params, best_thresh)
+                test_segacc, test_segpre, test_segrec, test_segf1s, test_preds = get_seg_metrics(sess, test_model_spec, num_steps, params, best_thresh)
                 test_segacc_list.append(test_segacc)
                 test_segpre_list.append(test_segpre)
                 test_segrec_list.append(test_segrec)
@@ -305,4 +305,4 @@ def train_and_evaluate(train_model_spec, eval_model_spec, test_model_spec, model
                        'train_segf1s': train_segf1s_list, 'eval_segf1s': eval_segf1s_list, 'test_segf1s': test_segf1s_list})
     df.to_csv(os.path.join(model_dir, 'metrics.csv'), index=False)
 
-
+    return sess, train_metrics, eval_metrics, test_metrics, train_preds, eval_preds, test_preds
